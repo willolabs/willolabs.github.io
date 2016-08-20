@@ -1,0 +1,500 @@
+/************************/
+/* WilloLabs Core SCSS */
+/************************/
+/* http://paletton.com/#uid=52P0u0kqFg0fDr2llllvFb0HQ6p */
+/* https://color.adobe.com/create/color-wheel/?copy=true&base=2&rule=Triad&selected=0&name=Copy%20of%20Color%20Theme%203&mode=rgb&rgbvalues=0.07409638906657808,0.44,0.10831399453733544,0.21553184252493365,0.14699917635939672,0.39901960784313717,0.09367717136297188,0.3490196078431372,0.11755560953725377,0.5490196078431372,0.3142024124606951,0.09245538742710274,0.6490196078431372,0.38812211867304613,0.14174645624348184&swatchOrder=0,1,2,3,4 */
+@font-face {
+  font-family: FontAwesome;
+  src: url("../font-awesome/fonts/fontawesome-webfont.woff") format("woff"); }
+@font-face {
+  font-family: 'quicksanddash';
+  src: url("../fonts/quicksand/quicksand_dash-webfont.woff2") format("woff2"), url("../fonts/quicksand/quicksand_dash-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'quicksandbold';
+  src: url("../fonts/quicksand/quicksand-bold-webfont.woff2") format("woff2"), url("../fonts/quicksand/quicksand-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'quicksandbold_italic';
+  src: url("../fonts/quicksand/quicksand-bolditalic-webfont.woff2") format("woff2"), url("../fonts/quicksand/quicksand-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'quicksanditalic';
+  src: url("../fonts/quicksand/quicksand-italic-webfont.woff2") format("woff2"), url("../fonts/quicksand/quicksand-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'quicksandlight';
+  src: url("../fonts/quicksand/quicksand-light-webfont.woff2") format("woff2"), url("../fonts/quicksand/quicksand-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'quicksandlight_italic';
+  src: url("../fonts/quicksand/quicksand-lightitalic-webfont.woff2") format("woff2"), url("../fonts/quicksand/quicksand-lightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'quicksandregular';
+  src: url("../fonts/quicksand/quicksand-regular-webfont.woff2") format("woff2"), url("../fonts/quicksand/quicksand-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/************************/
+/* WilloLabs Mixins     */
+/************************/
+#header {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2em 1%;
+  z-index: 10000;
+  width: 100%; }
+  #header #brandLogo {
+    display: block;
+    font-size: 2em;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0px 10px rgba(0, 0, 0, 0.95);
+    text-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+    color: #FFF; }
+    #header #brandLogo img {
+      height: 1.2em;
+      width: auto; }
+  #header .demo {
+    white-space: nowrap; }
+    #header .demo a:link, #header .demo a:visited {
+      color: #A56324; }
+    #header .demo a:hover, #header .demo a:focus {
+      color: #FFF; }
+    #header .demo a:active {
+      color: #e6e6e6;
+      border-color: #e6e6e6; }
+
+#navigation {
+  position: relative;
+  text-align: left; }
+  #navigation .hamburger {
+    display: none; }
+  #navigation ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    white-space: nowrap; }
+    #navigation ul li {
+      display: inline;
+      font-size: 1em;
+      margin-right: 40px;
+      text-align: center;
+      position: relative;
+      white-space: nowrap; }
+      #navigation ul li:last-child {
+        margin-right: 0; }
+      #navigation ul li a, #navigation ul li a:link, #navigation ul li a:visited {
+        color: #FFF;
+        padding-bottom: .5em; }
+        #navigation ul li a.current, #navigation ul li a:link.current, #navigation ul li a:visited.current {
+          color: #999; }
+      #navigation ul li a:hover, #navigation ul li a:active, #navigation ul li a:focus {
+        text-shadow: 0 0 20px rgba(88, 172, 88, 0.4);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5); }
+
+.slide {
+  transform: translateX(200px);
+  -webkit-transform: translateX(200px);
+  /** Chrome & Safari **/
+  -o-transform: translateX(200px);
+  /** Opera **/
+  -moz-transform: translate(200px);
+  /** Firefox **/ }
+
+#navigation.collapsed {
+  position: absolute;
+  top: 2em;
+  left: 10px;
+  display: block; }
+  #navigation.collapsed .hamburger {
+    display: block;
+    font-size: 1.7em;
+    line-height: 1.5em; }
+    #navigation.collapsed .hamburger a, #navigation.collapsed .hamburger a:link, #navigation.collapsed .hamburger a:visited {
+      color: #FFF; }
+    #navigation.collapsed .hamburger a:active, #navigation.collapsed .hamburger a:hover, #navigation.collapsed .hamburger a:focus {
+      color: #e6e6e6; }
+  #navigation.collapsed ul {
+    display: none; }
+  #navigation.collapsed ul.sidebar {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -180px; }
+    #navigation.collapsed ul.sidebar li {
+      display: block;
+      text-align: left; }
+
+/* Value Diagram Navigation */
+.diagram .arrow {
+  height: 100%;
+  min-height: 100%;
+  vertical-align: middle;
+  width: 100px;
+  border: 1px solid red;
+  float: left; }
+
+/* Backgrounds */
+#home {
+  background: url(../img/background/covers/trees_2400.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#institutions {
+  background: linear-gradient(rgba(19, 112, 28, 0.5), rgba(19, 112, 28, 0.5)), url(../img/background/covers/china_2400.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#providers {
+  background: linear-gradient(rgba(54, 37, 100, 0.5), rgba(54, 37, 100, 0.5)), url(../img/background/covers/old-willow_2400.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#collegeRetailers {
+  background: linear-gradient(rgba(140, 80, 24, 0.5), rgba(140, 80, 24, 0.5)), url(../img/background/covers/weeping-willow_2400.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#contact {
+  background: linear-gradient(rgba(19, 112, 28, 0.5), rgba(19, 112, 28, 0.5)), url(../img/background/covers/bridge_2400.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/* Forms */
+input[type="text"], input[type="email"], select, textarea {
+  width: 100%; }
+
+textarea {
+  min-height: 8em; }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  .cover .column, .cover .columns {
+    float: none;
+    position: relative; } }
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+  .cover .column, .cover .columns {
+    float: none;
+    position: relative; } }
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+  .cover .column, .cover .columns {
+    float: none;
+    position: relative; } }
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */ }
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */ }
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */ }
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */ }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */ }
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */ }
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */ }
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */ }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */ }
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */ }
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */ }
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */ }
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */ }
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */ }
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */ }
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */ }
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */ }
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */ }
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */ }
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */ }
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */ }
+/* Other breakpoints ----------- */
+@media only screen and (max-width: 800px) {
+  #header .columns {
+    display: block;
+    float: none;
+    text-align: center;
+    width: 100%; }
+    #header .columns #brandLogo {
+      margin: 0 auto .5em auto; }
+    #header .columns #navigation {
+      text-align: center; }
+
+  #home .introduction.default {
+    margin: 15% auto; } }
+@media only screen and (max-width: 600px) {
+  #navigation ul li {
+    margin-right: 30px; } }
+html {
+  height: 100%;
+  min-height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 100%; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0; }
+
+body {
+  line-height: 1.6;
+  font-size: 18px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+  text-align: center;
+  background-color: #6e6e6e; }
+  body a, body a:link, body a:hover, body a:active, body a:visited {
+    text-decoration: none; }
+  body a, body a:link, body a:visited {
+    color: #A56324; }
+  body a:hover, body a:active {
+    color: black; }
+  body p {
+    font-size: 1em;
+    margin-bottom: 1.5rem; }
+  body hr {
+    border: 0;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.25); }
+
+/* Headlines */
+h1, h2, h3 {
+  font-family: quicksandlight; }
+
+/* Buttons */
+.buttonDisplay {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+
+/* General Layout */
+#main {
+  position: relative;
+  padding: 0;
+  margin: 0; }
+  #main .section {
+    text-align: left; }
+
+#main {
+  /* sticky footer */
+  min-height: 100%;
+  background-color: #FFF; }
+  #main .section {
+    margin: 0 auto;
+    min-width: 320px;
+    padding: 2em 10%;
+    position: relative;
+    text-align: left; }
+    #main .section h1 {
+      font-size: 2.2em;
+      margin-bottom: .5em; }
+    #main .section h2 {
+      font-size: 1.8em; }
+    #main .section h3 {
+      font-size: 1.2em; }
+
+footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 2em 10%;
+  font-size: 0.73em; }
+  footer p {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.75); }
+
+/* Slides */
+#home {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  color: #FFF;
+  margin: 0 auto; }
+
+.introduction {
+  margin: 10% auto;
+  padding: 2em;
+  max-width: 800px; }
+  .introduction.default {
+    background: rgba(0, 0, 0, 0.75); }
+
+#institutions, #providers, #collegeRetailers {
+  color: #FFF; }
+  #institutions .buttonDisplay, #providers .buttonDisplay, #collegeRetailers .buttonDisplay {
+    border: 1px solid #FFF;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.1); }
+  #institutions .buttonDisplay:hover, #providers .buttonDisplay:hover, #collegeRetailers .buttonDisplay:hover {
+    background-color: rgba(0, 0, 0, 0.5); }
+
+.section#value-bullets #bullet-row {
+  padding-bottom: 2em;
+  border-bottom: 1px solid #bbb; }
+  .section#value-bullets #bullet-row img {
+    width: 100%;
+    margin-bottom: 1em; }
+  .section#value-bullets #bullet-row .columns p:first-of-type {
+    margin-bottom: .5em;
+    color: #13701C; }
+
+.section#value-diagram h2 {
+  margin-bottom: 1em;
+  font-weight: bold; }
+.section#value-diagram .value-introduction {
+  margin-bottom: 4em; }
+  .section#value-diagram .value-introduction p {
+    text-align: center; }
+  .section#value-diagram .value-introduction p:nth-of-type(1) {
+    text-align: left; }
+  .section#value-diagram .value-introduction ul {
+    text-align: center;
+    margin: 0 auto;
+    list-style-type: none; }
+    .section#value-diagram .value-introduction ul li {
+      display: inline;
+      list-style-type: none;
+      margin-right: 2em;
+      font-weight: bold; }
+      .section#value-diagram .value-introduction ul li:last-child {
+        margin-right: none; }
+.section#value-diagram .diagram {
+  position: relative; }
+  .section#value-diagram .diagram h2 {
+    text-align: center; }
+  .section#value-diagram .diagram img {
+    width: 100%; }
+
+#solutions .row {
+  padding: 4em 0;
+  border-bottom: 1px solid #bbb; }
+  #solutions .row h2 {
+    font-size: 1.4em;
+    font-weight: bold; }
+  #solutions .row li {
+    list-style-type: none; }
+  #solutions .row img {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #efefef; }
+
+#faq.section {
+  padding-bottom: 4em; }
+  #faq.section .faqContent {
+    border: 1px solid #13701C;
+    border-radius: 4px;
+    padding: 1.25em 1.25em 1.5em 1.25em; }
+    #faq.section .faqContent .question {
+      color: #13701C;
+      margin-bottom: 0.5em; }
+    #faq.section .faqContent .answer {
+      margin-bottom: 2em; }
+
+#contact {
+  background-color: #878787; }
+  #contact h1, #contact label, #contact p {
+    color: #FFF; }
+  #contact a, #contact a:link, #contact a:visited {
+    color: #FFF;
+    text-decoration: underline; }
+  #contact a:hover, #contact a:active, #contact a:focus {
+    text-decoration: none; }
+  #contact input[type="submit"] {
+    display: block;
+    color: #fff;
+    border-color: #FFF; }
+    #contact input[type="submit"]:hover, #contact input[type="submit"]:active, #contact input[type="submit"]:focus {
+      border-color: #FFF; }
+  #contact .buttonDisplay {
+    border: 1px solid #FFF;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.1); }
+  #contact .buttonDisplay:hover {
+    background-color: rgba(0, 0, 0, 0.5); }
+
+/* Accessibility */
+.visuallyHidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
+/*# sourceMappingURL=willoLabsStyles.css.map */

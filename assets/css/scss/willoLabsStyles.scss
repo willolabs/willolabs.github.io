@@ -1,0 +1,348 @@
+/************************/
+/* WilloLabs Core SCSS */
+/************************/
+
+@import 'colors';
+@import 'fonts';
+@import 'mixins';
+
+@import 'navigation';
+@import 'backgrounds';
+@import 'forms';
+@import 'responsive';
+
+
+html {
+    height: 100%; min-height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+    margin: 0;
+}
+
+body {
+    line-height: 1.6;
+    font-size: 18px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+    text-align: center;
+    background-color: lighten($black, 43%);
+    
+    a, a:link, a:hover, a:active, a:visited {
+        text-decoration: none;
+    }
+
+    a, a:link, a:visited {
+        color: $accentColor;
+    }
+
+    a:hover, a:active {
+        color: darken($accentColor, 40%);
+    }
+
+
+    p {
+        font-size: 1em;
+        margin-bottom: 1.5rem;
+    }
+    
+    hr {
+        border: 0; 
+        height: 1px; background: rgba(0,0,0,0.25);
+    }
+    
+}
+
+/* Headlines */
+
+h1, h2, h3 {
+    font-family: quicksandlight;
+}
+
+/* Buttons */
+.buttonDisplay {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+
+/* General Layout */
+
+
+#main {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    
+    .section {
+       text-align: left;
+    }
+    
+}
+
+#main {
+    
+    /* sticky footer */
+    min-height: 100%;
+    background-color: $white;
+    
+    .section {
+        margin: 0 auto;
+        min-width: 320px;
+        padding: 2em 10%;
+        position: relative;
+        text-align: left;
+        
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: .5em;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+        }
+        
+        h3 {
+            font-size: 1.2em;
+        }
+    }
+
+}
+
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 0;
+    padding: 2em 10%;
+    font-size: 0.73em;
+
+    p {
+        text-align: left;
+        color: rgba(255, 255, 255, 0.75);
+    }
+}
+
+/* Slides */
+#home {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    color: #FFF;
+    margin: 0 auto;
+
+}
+
+.introduction {
+    margin: 10% auto;
+    padding: 2em;
+    max-width: 800px;
+
+    &.default {
+        background: rgba(0,0,0,0.75);
+    }
+}
+
+#institutions, #providers, #collegeRetailers {
+    color: $white;
+    
+    .buttonDisplay {
+        border: 1px solid $white;
+        color: $white;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    .buttonDisplay:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+}
+
+.section#value-bullets {
+    
+    #bullet-row {
+        padding-bottom: 2em;
+        border-bottom: 1px solid #bbb;
+        
+        img { 
+            width: 100%; 
+            margin-bottom: 1em;
+        }
+        .columns {
+            p:first-of-type {
+                margin-bottom: .5em;
+                color: $brandColor;
+            }
+        }
+    }
+}
+
+.section#value-diagram {
+    
+    h2 {
+        margin-bottom: 1em;
+        font-weight: bold;
+    }
+    
+    .value-introduction {
+        
+        margin-bottom: 4em;
+        
+        p {
+            text-align: center;
+        }
+        
+        p:nth-of-type(1) {
+            text-align: left;
+        }
+        
+        
+        ul {
+            text-align: center;
+            margin: 0 auto;
+            list-style-type: none;
+            
+            li {
+                display: inline;
+                list-style-type: none;
+                margin-right: 2em;
+                font-weight: bold;
+                
+                &:last-child {
+                    margin-right: none;
+                }
+                
+            }
+        }
+    }
+    
+    .diagram {
+        position: relative;
+        
+        h2 {
+            text-align: center;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        
+    }
+    
+}
+
+#solutions {
+    
+    .row {
+        padding: 4em 0;
+        border-bottom: 1px solid #bbb;
+        
+        h2 {
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        
+        img {
+            width: 100%;
+            max-width: 800px;
+            border: 1px solid #efefef;
+        }
+        
+    }
+}
+
+#faq.section {
+    padding-bottom: 4em;
+    
+    .faqContent {
+
+        border: 1px solid $brandColor;
+        border-radius: 4px;
+        padding: 1.25em 1.25em 1.5em 1.25em;
+
+        .question {
+            color: $brandColor;
+            margin-bottom: 0.5em;
+        }
+        .answer {
+            margin-bottom: 2em;
+        }
+    }
+}
+
+#contact {
+    background-color: lighten($black, 53%);
+    
+    h1, label, p {
+        color: #FFF;
+    }
+    
+    a, a:link, a:visited {
+        color: $white;
+        text-decoration: underline;
+    }
+    
+    a:hover, a:active, a:focus {
+        text-decoration: none;
+    }
+    
+    input[type="submit"] {
+        display: block;
+        color: #fff;
+        border-color: #FFF;
+        
+        &:hover, &:active, &:focus {
+            border-color: #FFF;
+        }
+    }
+    
+    .buttonDisplay {
+        border: 1px solid $white;
+        color: $white;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    .buttonDisplay:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* Accessibility */
+
+.visuallyHidden {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0; 
+}
+

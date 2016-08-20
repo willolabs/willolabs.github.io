@@ -1,0 +1,29 @@
+/************************/
+/* WilloLabs Mixins     */
+/************************/
+
+@mixin gradient-three-stop-diagonal-20-degrees ($color-left,$color-middle,$color-right) {
+    background-color: $color-left; /* Old browsers */
+    background:
+        -moz-linear-gradient(
+            20deg, $color-left 0, $color-middle 50%, $color-right 100%
+        ),url(../img/background/asfalt-dark.png); /* FF3.6+ */
+    background:
+        -webkit-gradient(
+            linear,
+            left top, left bottom,
+            color-stop(0,$color-left), color-stop(50%,$color-middle), color-stop(100%,$color-right)
+        ),url(../img/background/asfalt-dark.png); /* Chrome,Safari4+ */
+    background:
+        -webkit-linear-gradient(
+            20deg, $color-left 0,$color-middle 50%,$color-right 100%
+        ),url(../img/background/asfalt-dark.png); /* Chrome10+,Safari5.1+ */
+    background:
+        -o-linear-gradient(
+            20deg, $color-left 0,$color-middle 50%,$color-right 100%
+        ),url(../img/background/asfalt-dark.png); /* Opera11.10+ */
+    background:
+        linear-gradient(
+            20deg, $color-left 0,$color-middle 50%,$color-right 100%
+        ),url(../img/background/asfalt-dark.png); /* W3C */
+}
