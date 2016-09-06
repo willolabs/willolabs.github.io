@@ -251,6 +251,7 @@
                 <div class="row">
                     <div class="columns eight offset-by-two">
                     <form action="https://formspree.io/info@willolabs.com" method="post" enctype="text/plain">
+                    	<input type="text" name="_gotcha" style="display:none" />
                         <label for="commentName">
                             Name
                         </label>
@@ -262,7 +263,7 @@
                         <label for="commentLastName">
                             Email
                         </label>
-                        <input name="senderEmail" type="email" id="commentEmail" required="required" aria-required="true" />
+                        <input name="_replyTo" type="email" id="commentEmail" required="required" aria-required="true" />
                         <label for="commentOrg">
                             Institution or Organization
                         </label>
@@ -284,7 +285,7 @@
                         <label for="commentSubject">
                             Subject
                         </label>
-                        <input name="senderSubject" type="text" id="commentSubject" required="required" aria-required="true" />
+                        <input name="_subject" type="text" id="commentSubject" required="required" aria-required="true" />
 
                         <label for="contactMessage">Message</label>
                         <textarea name="senderMessage" id="contactMessage">
