@@ -21,7 +21,7 @@
     <body>
         <div id="header" class="row">
             <div class="three columns">
-                <h1 id="brandLogo"><img src="assets/img/logos/device/willo_device_ffffff.png" alt="" /> WilloLabs</h1>
+                <h1 id="brandLogo"><img src="assets/img/logos/willo_device_FFFFFF.png" alt="" /> WilloLabs</h1>
             </div>
             <div class="nine columns">
                 <div id="navigation">
@@ -220,7 +220,7 @@
                             <div class="four columns">
                                 <p class="question">Which e-readers and learning apps work with Willo?</p>
                                 <p class="answer">Any that are LTI 1.1 enabled, and we can custom-connect apps that aren’t yet LTI compliant</p>
-                                <p class="question">Which LMS’s/platforms work with Willo?</p>
+                                <p class="question">Which LMS's/platforms work with Willo?</p>
                                 <p class="answer">Willo works with all major LMS’s in the market. And if the LMS or Portal isn’t yet LTI-compliant, we can translate protocols and make seamless access happen.</p>
                                 <p class="question">How many ebooks or apps can I integrate into 1 course section in my LMS?</p>
                                 <p class="answer">As many as you like!</p>
@@ -250,25 +250,25 @@
                 </div>
                 <div class="row">
                     <div class="columns eight offset-by-two">
-                    <form action="MAILTO:andy.hall@willolabs.com" method="post" enctype="text/plain">
+                    <form action="https://formspree.io/andy.hall@willolabs.com" method="post" enctype="text/plain">
                         <label for="commentName">
                             Name
                         </label>
-                        <input type="text" id="commentName" required="required" aria-required="true" />
+                        <input name="senderName" type="text" id="commentName" required="required" aria-required="true" />
                         <label for="commentTitle">
                             Title
                         </label>
-                        <input type="text" id="commentTitle" required="required" aria-required="true" />
+                        <input name="senderTitle" type="text" id="commentTitle" required="required" aria-required="true" />
                         <label for="commentLastName">
                             Email
                         </label>
-                        <input type="email" id="commentEmail" required="required" aria-required="true" />
+                        <input name="senderEmail" type="email" id="commentEmail" required="required" aria-required="true" />
                         <label for="commentOrg">
                             Institution or Organization
                         </label>
-                        <input type="text" id="commentOrg" required="required" aria-required="true" />
+                        <input name="senderOrg" type="text" id="commentOrg" required="required" aria-required="true" />
                         <label for="commentOrgType">Organization Type</label>
-                        <select id="commentOrgType">
+                        <select name="senderOrgType" id="commentOrgType">
                             <option value="Higher Ed">Higher Ed</option>
                             <option value="Higher Ed For-Profit">Higher Ed For-Profit</option>
                             <option value="K12">K12</option>
@@ -279,17 +279,17 @@
                         <label for="commentPhone">
                             Phone (Optional)
                         </label>
-                        <input type="text" id="commentPhone" placeholder="(555) 555-5555" required="required" aria-required="true" />
+                        <input name="senderPhone" type="text" id="commentPhone" placeholder="(555) 555-5555" />
                         <hr />
                         <label for="commentSubject">
                             Subject
                         </label>
-                        <input type="text" id="commentSubject" required="required" aria-required="true" />
+                        <input name="senderSubject" type="text" id="commentSubject" required="required" aria-required="true" />
 
                         <label for="contactMessage">Message</label>
-                        <textarea id="contactMessage">
+                        <textarea name="senderMessage" id="contactMessage">
                         </textarea>
-                        <input type="submit" value="submit" class="buttonDisplay" />
+                        <input name="submit" type="submit" value="submit" class="buttonDisplay" />
                     </form>
                     </div>
                 </div>
