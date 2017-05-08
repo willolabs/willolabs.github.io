@@ -373,9 +373,18 @@ footer {
   margin: 0;
   padding: 2em 10%;
   font-size: 0.73em; }
+  footer a, footer a:link, footer a:visited {
+    text-decoration: underline; }
+  footer a:hover, footer a:active, footer a:focus {
+    color: #FFF;
+    text-decoration: underline; }
   footer p {
     text-align: left;
-    color: rgba(255, 255, 255, 0.75); }
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: .25em; }
+  footer #footer-links p {
+    margin-top: 0;
+    line-height: 1; }
 
 /* Slides */
 #home {
@@ -485,6 +494,18 @@ footer {
     background-color: rgba(0, 0, 0, 0.1); }
   #contact .buttonDisplay:hover {
     background-color: rgba(0, 0, 0, 0.5); }
+
+#secondaryPage #header {
+  background-color: black;
+  padding: 1em 1%;
+  position: relative; }
+  #secondaryPage #header a, #secondaryPage #header a:link, #secondaryPage #header a:visited {
+    color: #FFF; }
+  #secondaryPage #header #navBack {
+    position: absolute;
+    top: 24px;
+    left: 10px;
+    font-size: 1em; }
 
 /* Accessibility */
 .visuallyHidden {
