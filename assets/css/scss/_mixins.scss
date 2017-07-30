@@ -27,3 +27,15 @@
             20deg, $color-left 0,$color-middle 50%,$color-right 100%
         ),url(../img/background/asfalt-dark.png); /* W3C */
 }
+
+@mixin circle-border {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: relative;
+    width: 99.999%; /* 100% causes distortion when scaling */
+    height: 0;
+    padding-top: 99.999%; /* Must equal width */
+
+}
+

@@ -372,9 +372,10 @@ footer {
   background-color: rgba(0, 0, 0, 0.8);
   margin: 0;
   padding: 2em 10%;
-  font-size: 0.73em; }
+  font-size: 1em;
+  text-align: left; }
   footer a, footer a:link, footer a:visited {
-    text-decoration: underline; }
+    text-decoration: none; }
   footer a:hover, footer a:active, footer a:focus {
     color: #FFF;
     text-decoration: underline; }
@@ -382,9 +383,13 @@ footer {
     text-align: left;
     color: rgba(255, 255, 255, 0.75);
     margin-bottom: .25em; }
-  footer #footer-links p {
-    margin-top: 0;
-    line-height: 1; }
+  footer #footerLinks ul {
+    margin-left: 0;
+    list-style-type: none; }
+    footer #footerLinks ul li {
+      display: inline;
+      margin-right: 2em;
+      font-weight: bold; }
 
 /* Slides */
 #home {
@@ -506,6 +511,91 @@ footer {
     top: 24px;
     left: 10px;
     font-size: 1em; }
+
+#about .row {
+  margin-bottom: 2em; }
+#about .idCard {
+  text-align: center; }
+  #about .idCard .idImageSocialContainer {
+    position: relative;
+    width: 100%;
+    height: inherit;
+    margin-bottom: 1.2em; }
+#about .idImage, #about .idSocial {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  position: relative;
+  width: 99.999%;
+  /* 100% causes distortion when scaling */
+  height: 0;
+  padding-top: 99.999%;
+  /* Must equal width */ }
+#about .idSocial {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: background-color 0.25s ease-out;
+  -moz-transition: background-color 0.25s ease-out;
+  -o-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out; }
+  #about .idSocial .peekaboo {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: relative;
+    width: 99.999%;
+    /* 100% causes distortion when scaling */
+    height: 0;
+    padding-top: 99.999%;
+    /* Must equal width */
+    position: absolute;
+    left: -2000px;
+    font-size: 5em;
+    color: #000;
+    color: #0084bf; }
+  #about .idSocial:hover, #about .idSocial:focus {
+    background-color: rgba(255, 255, 255, 0.5); }
+    #about .idSocial:hover .peekaboo, #about .idSocial:focus .peekaboo {
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%); }
+      #about .idSocial:hover .peekaboo i, #about .idSocial:focus .peekaboo i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%); }
+        #about .idSocial:hover .peekaboo i:hover, #about .idSocial:hover .peekaboo i:focus, #about .idSocial:focus .peekaboo i:hover, #about .idSocial:focus .peekaboo i:focus {
+          color: #0084bf;
+          color: #FFF; }
+#about .idImage {
+  background-repeat: no-repeat;
+  background-size: cover; }
+#about #idCardCEO .idImage {
+  background-image: url("../img/team/andy_hall.jpg"); }
+#about #idCardCTO .idImage {
+  background-image: url("../img/team/matt_hanger.jpg"); }
+#about #idCardPresident .idImage {
+  background-image: url("../img/team/kate_mckain.jpg"); }
+#about .idBio {
+  clear: both; }
+  #about .idBio .idCardName {
+    font-size: 1.4em; }
+
+/* Terms of Use */
+#termsOfUse .touContent ol {
+  padding-left: 40px;
+  list-style-position: outside; }
+  #termsOfUse .touContent ol li.touSection {
+    margin-bottom: 4rem; }
+    #termsOfUse .touContent ol li.touSection h2 {
+      font-size: 18px;
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      text-transform: uppercase;
+      font-weight: bold; }
 
 /* Accessibility */
 .visuallyHidden {

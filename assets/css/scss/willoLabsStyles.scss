@@ -138,10 +138,11 @@ footer {
     background-color: rgba(0, 0, 0, 0.8);
     margin: 0;
     padding: 2em 10%;
-    font-size: 0.73em;
+    font-size: 1em;
+    text-align: left;
 
     a, a:link, a:visited {
-    	text-decoration: underline;
+    	text-decoration: none;
     }
 
     a:hover, a:active, a:focus {
@@ -156,9 +157,18 @@ footer {
         margin-bottom: .25em;
     }
 
-    #footer-links p {
-    	margin-top: 0;
-    	line-height: 1;
+    #footerLinks {
+        ul {
+            margin-left: 0;
+            list-style-type: none;
+
+            li {
+                display: inline;
+                margin-right: 2em;
+                font-weight: bold;
+            }
+
+        }
     }
 }
 
@@ -369,6 +379,118 @@ footer {
 			font-size: 1em;
 		}
 	}
+}
+
+#about {
+
+    .row { margin-bottom: 2em; }
+
+    .idCard {
+        text-align: center;
+
+        .idImageSocialContainer {
+            position: relative;
+            width: 100%;
+            height: inherit;
+            margin-bottom: 1.2em;
+        }
+
+    }   
+
+    .idImage, .idSocial {
+       @include circle-border;
+
+
+    } 
+
+    .idSocial {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+          -webkit-transition: background-color 0.25s ease-out;
+          -moz-transition: background-color 0.25s ease-out;
+          -o-transition: background-color 0.25s ease-out;
+          transition: background-color 0.25s ease-out;
+
+        .peekaboo {
+            @include circle-border;
+            position: absolute;
+            left: -2000px;
+            font-size: 5em;
+            color: $black;
+            color: #0084bf;
+        }
+
+        &:hover, &:focus {
+            background-color: rgba(255,255,255,  .5);
+
+            .peekaboo {
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%) ;
+
+                i {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin-right: -50%;
+                    transform: translate(-50%, -50%) ; 
+
+                    &:hover, &:focus {
+                        color: #0084bf;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .idImage {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    #idCardCEO .idImage {
+        background-image: url("../img/team/andy_hall.jpg");
+    }
+    #idCardCTO .idImage {
+        background-image: url("../img/team/matt_hanger.jpg");
+    }
+    #idCardPresident .idImage {
+        background-image: url("../img/team/kate_mckain.jpg");
+    }
+
+    .idBio {
+        clear: both;
+
+        .idCardName {
+            font-size: 1.4em;
+        }
+    }
+
+}
+
+/* Terms of Use */
+#termsOfUse {
+
+    .touContent ol {
+        padding-left: 40px;
+        list-style-position: outside;
+
+        li.touSection {
+            margin-bottom: 4rem;
+
+            h2 {
+                font-size: 18px;
+                font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
 }
 
 
