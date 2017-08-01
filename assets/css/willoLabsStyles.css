@@ -592,9 +592,9 @@ footer {
   #termsOfUse .touContent ol li.touSection {
     margin-bottom: 4rem; }
     #termsOfUse .touContent ol li.touSection h2 {
-      font-size: 18px;
+      font-size: 1.2em;
       font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-      text-transform: uppercase; }
+      letter-spacing: .05em; }
 
 /* Accessibility */
 .visuallyHidden {
