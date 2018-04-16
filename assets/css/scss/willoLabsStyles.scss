@@ -325,6 +325,15 @@ footer {
     }
 }
 
+#accessibilityStatement {
+
+    .row {
+        padding: 4em 0;
+        border-top: 1px solid #bbb;
+        border-bottom: 1px solid #bbb;
+    }
+}
+
 #contact {
     background-color: lighten($black, 53%);
     
