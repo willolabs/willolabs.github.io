@@ -478,6 +478,11 @@ footer {
     #faq.section .faqContent .answer {
       margin-bottom: 2em; }
 
+#accessibilityStatement .row {
+  padding: 4em 0;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb; }
+
 #contact {
   background-color: #878787; }
   #contact h1, #contact label, #contact p {

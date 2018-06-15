@@ -103,7 +103,12 @@
         });
         $('#navigation .collegeRetailers').click(function() {
             $('html,body').animate({
-                scrollTop: $('#collegeRetailers').offset().top 
+                scrollTop: $('#collegeRetailers').offset().top
+            }, 'slow');
+        });
+        $('#navigation .accessibilityStatement').click(function() {
+            $('html,body').animate({
+                scrollTop: $('#accessibilityStatement').offset().top
             }, 'slow');
         });
         $('#navigation .contact').click(function() {
