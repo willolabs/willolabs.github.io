@@ -396,7 +396,10 @@ footer {
     .row { margin-bottom: 2em; }
 
     .idCard {
-        text-align: center;
+        padding: 2em;
+        border: 1px solid #efefef;
+        max-height: 330px;
+        min-height: 290px;
 
         .idImageSocialContainer {
             position: relative;
@@ -408,7 +411,9 @@ footer {
     }   
 
     .idImage, .idSocial {
-       @include circle-border;
+    width: 99.999%; /* 100% causes distortion when scaling */
+    height: 0;
+    padding-top: 99.999%; /* Must equal width */
 
 
     } 
@@ -463,21 +468,18 @@ footer {
     }
 
 
-    #idCardCEO .idImage {
-        background-image: url("../img/team/andy_hall.jpg");
-    }
-    #idCardCTO .idImage {
-        background-image: url("../img/team/matt_hanger.jpg");
-    }
-    #idCardPresident .idImage {
-        background-image: url("../img/team/kate_mckain.jpg");
-    }
 
     .idBio {
         clear: both;
 
         .idCardName {
-            font-size: 1.4em;
+            font-size: 1em;
+            line-height: 1;
+            margin-bottom: .25em;
+        }
+        .idCardTitle {
+            font-size: .8em;
+            line-height: 1;
         }
     }
 
