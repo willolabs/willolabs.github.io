@@ -188,6 +188,28 @@ input[type="text"], input[type="email"], select, textarea {
 textarea {
   min-height: 8em; }
 
+/* Background image definitions for ID Cards */
+#idCardDaffornScott .idImage {
+  background-image: url("../img/team/dafforn_scott.jpg"); }
+
+#idCardGappmeyerThomas .idImage {
+  background-image: url("../img/team/gappmeyer_thomas.jpg"); }
+
+#idCardHallAndy .idImage {
+  background-image: url("../img/team/hall_andy.jpg"); }
+
+#idCardHangerMatt .idImage {
+  background-image: url("../img/team/hanger_matt.jpg"); }
+
+#idCardKandianisPatrick .idImage {
+  background-image: url("../img/team/kandianis_patrick.jpg"); }
+
+#idCardMcKainKate .idImage {
+  background-image: url("../img/team/mckain_kate.jpg"); }
+
+#idCardSmithBrad .idImage {
+  background-image: url("../img/team/smith_brad.jpg"); }
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
