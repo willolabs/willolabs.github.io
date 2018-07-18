@@ -58,7 +58,7 @@
                 $('#header, #main').removeClass('slide transition');
                 $('body').css('overflow-x','visible');
             } else {
-                $('#navigation.collapsed ul').addClass('sidebar');
+                $('#navigation.collapsed ul.main-menu').addClass('sidebar');
                 $('#header, #main').addClass('slide transition');
                 $('body').css('overflow-x','hidden');
             }
