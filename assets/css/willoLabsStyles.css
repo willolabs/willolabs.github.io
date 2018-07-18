@@ -86,7 +86,7 @@
     width: 100%;
     white-space: nowrap; }
     #navigation ul li {
-      display: inline;
+      display: inline-block;
       font-size: 1em;
       margin-right: 40px;
       text-align: center;
@@ -102,6 +102,21 @@
       #navigation ul li a:hover, #navigation ul li a:active, #navigation ul li a:focus {
         text-shadow: 0 0 20px rgba(88, 172, 88, 0.4);
         border-bottom: 2px solid rgba(255, 255, 255, 0.5); }
+      #navigation ul li ul {
+        position: absolute;
+        display: none;
+        width: inherit; }
+      #navigation ul li:hover ul {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.75); }
+        #navigation ul li:hover ul li {
+          display: block;
+          width: 100%;
+          text-align: left;
+          padding: 5px; }
+    #navigation ul li.has-popup > a:hover, #navigation ul li.has-popup > a:active, #navigation ul li.has-popup > a:focus {
+      text-shadow: 0 0 20px rgba(88, 172, 88, 0.4);
+      border-bottom: 0px; }
 
 .slide {
   transform: translateX(200px);

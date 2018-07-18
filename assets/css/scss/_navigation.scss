@@ -60,7 +60,7 @@
         
         
         li {
-            display: inline;
+            display: inline-block;
             font-size: 1em;
             margin-right: 40px;
             text-align: center;
@@ -85,8 +85,37 @@
                 text-shadow: 0 0 20px rgba(88,172,88,0.4);
                 border-bottom: 2px solid rgba(255,255,255,0.5);
             }
+
+            ul {
+                position: absolute;
+                display: none;
+                width: inherit;
+            }
+
+            &:hover {
+
+                ul {
+                    display: block;
+                    background-color: rgba(0,0,0,0.75);
+
+                    li {
+                        display: block;
+                        width: 100%;
+                        text-align: left;
+                        padding: 5px;
+                    }
+                }
+
+            }
             
         }
+
+        li.has-popup > a {
+                &:hover, &:active, &:focus {
+                    text-shadow: 0 0 20px rgba(88,172,88,0.4);
+                    border-bottom: 0px;
+                } 
+            }        
     }
     
 }
