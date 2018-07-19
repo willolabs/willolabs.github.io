@@ -152,10 +152,13 @@
     #navigation.collapsed ul.main-menu.sidebar li {
       display: block;
       text-align: left; }
+      #navigation.collapsed ul.main-menu.sidebar li.has-popup {
+        margin-bottom: 1.5em; }
       #navigation.collapsed ul.main-menu.sidebar li.has-popup ul {
         display: block;
         position: relative;
         margin-left: .5em;
+        margin-top: .5em;
         background-color: rgba(0, 0, 0, 0);
         padding: 0; }
         #navigation.collapsed ul.main-menu.sidebar li.has-popup ul li {

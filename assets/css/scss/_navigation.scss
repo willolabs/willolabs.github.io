@@ -163,11 +163,16 @@
         li {
             display: block;
             text-align: left;
+
+            &.has-popup {
+                margin-bottom: 1.5em;
+            }
         
             &.has-popup ul {
                 display: block;
                 position: relative;
                 margin-left: .5em;
+                margin-top: .5em;
                 background-color: rgba(0,0,0,0);
                 padding: 0;
 

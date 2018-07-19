@@ -28,16 +28,22 @@
                     <div class="hamburger" aria-hidden="true"><a href="#" class="js-hamburger-link"><i class="fa fa-bars"></i><span class="visuallyHidden">Menu</span></a></div>
                     <ul class="main-menu">
                         <li class="has-popup">
-                            <a href="" class="navigationOption howItWorks">How It Works</a>
+                            <a href="#" class="navigationOption howItWorks">How It Works</a>
                             <ul class="sub-menu">
                                 <li><a href="#institutions" class="js-toggle-menu navigationOption institutions">Institutions</a></li>
                                 <li><a href="#providers" class="js-toggle-menu navigationOption providers">Providers</a></li>
                                 <li><a href="#retailers" class="js-toggle-menu navigationOption collegeRetailers">College Retailers</a></li>
                             </ul>
                         </li>
-                       <li><a href="#accessibility" class="js-toggle-menu navigationOption accessibilityStatement">Accessibility Statement</a></li>
+                       <li class="has-popup">
+                        <a href="#" class="navigationOption instantDigitalAccess">Instant Digital Access</a>
+                        <ul class="sub-menu">
+                            <li><a href="#solutionOptInOptOut" class="js-toggle-menu navigationOption optInOut">Opt-in/Opt-out Model</a></li>
+                            <li><a href="#solutionStudentPurchase" class="js-toggle-menu navigationOption studentPurchase">Student Purchase Model</a></li>
+                        </ul>
+                       </li>
                         <li class="has-popup">
-                            <a href="" class="navigationOption aboutUs">About Us</a>
+                            <a href="#" class="navigationOption aboutUs">About Us</a>
                             <ul class="sub-menu">
                                 <li><a href="about.html">Team</a></li>
                                 <li><a href="industry_partners.html">Industry Partners</a></li>
@@ -75,7 +81,7 @@
                         <p>Students have frictionless access to ebooks and learning software via your LMS or Portal.</p>
                     </div>
                     <div class="three columns">
-                        <h2 class="visuallyHidden">Opt In/Out</h2>
+                        <h2 class="visuallyHidden">Opt-In/Out</h2>
                         <img src="assets/img/diagram/bubbles/bubbleOptInOut.png" alt="" aria-hidden="true" />
                         <p>Enable student choice <span aria-hidden="true">+</span><span class="visuallyHidden">plus</span> instant access</p>
                         <p>Manage student choice with no data entry. Get opt reports in real time.</p>
@@ -155,7 +161,7 @@
             <!-- SOLUTIONS -->
             <div id="solutions" class="section">
                 <h1 class="visuallyHidden">Solutions</h1>
-                <div class="row">
+                <div id="solutionOptInOptOut" class="row">
                     <div class="four columns">
                         <h2>All Inclusive Digital Access Model: <em>Instant Access</em> with Opt-in and Opt-out</h2>
                         <ul>
@@ -171,7 +177,7 @@
                     </div>
                 </div>
                 
-                <div class="row">
+                <div id="solutionStudentPurchase" class="row">
                     <div class="four columns">
                         <h2>Student Bookstore Purchase Model: <em>Instant Access</em> with 1 click</h2>
                         <ul>
