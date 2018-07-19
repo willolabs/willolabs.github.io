@@ -109,10 +109,12 @@
     #navigation ul li.has-popup > a:hover, #navigation ul li.has-popup > a:active, #navigation ul li.has-popup > a:focus {
       text-shadow: 0 0 20px rgba(88, 172, 88, 0.4);
       border-bottom: 0px; }
-    #navigation ul li.has-popup:hover ul {
+    #navigation ul li.has-popup:hover ul,
+    #navigation ul li.has-popup:focus ul {
       display: block;
       background-color: rgba(0, 0, 0, 0.75); }
-      #navigation ul li.has-popup:hover ul li {
+      #navigation ul li.has-popup:hover ul li,
+      #navigation ul li.has-popup:focus ul li {
         display: block;
         width: 100%;
         text-align: left;
@@ -154,7 +156,7 @@
         display: block;
         position: relative;
         margin-left: .5em;
-        background-color: none;
+        background-color: rgba(0, 0, 0, 0);
         padding: 0; }
         #navigation.collapsed ul.main-menu.sidebar li.has-popup ul li {
           padding: 0; }

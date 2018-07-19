@@ -100,7 +100,8 @@
                     border-bottom: 0px;
                 } 
             } 
-        li.has-popup:hover {
+        li.has-popup:hover,
+        li.has-popup:focus {
 
             ul {
                     display: block;
@@ -167,7 +168,7 @@
                 display: block;
                 position: relative;
                 margin-left: .5em;
-                background-color: none;
+                background-color: rgba(0,0,0,0);
                 padding: 0;
 
                 li {
