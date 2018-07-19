@@ -10,6 +10,7 @@
 @import 'backgrounds';
 @import 'forms';
 @import 'team';
+@import 'partners_industry';
 @import 'responsive';
 
 
@@ -395,18 +396,57 @@ footer {
 
     .row { margin-bottom: 2em; }
 
-    .idCard {
-        padding: 2em;
-        border: 1px solid #efefef;
-        max-height: 330px;
-        min-height: 290px;
+    &.team {
 
+        .idCard {
+            max-height: 360px;
+            min-height: 340px;
+        }
         .idImageSocialContainer {
             position: relative;
             width: 100%;
             height: inherit;
             margin-bottom: 1.2em;
         }
+    }
+
+    &.partners-industry {
+
+        .idCard {
+            max-height: 240px;
+            min-height: 200px;
+            
+        }
+        .idImageSocialContainer {
+            position: relative;
+            width: 100%;
+            height: inherit;
+            margin-bottom: .5em;
+        }
+
+        .idImage {
+            background-size: 99.999%;
+            padding-top: 100px;
+            top: 0;
+            left: 0;
+            max-height: 100px;
+            min-height: 100px;
+            height: 100px;
+            max-width: 300px;
+        
+            &.portrait {
+                background-size: auto 99.99%;
+
+            }
+        }
+
+
+    }
+
+
+    .idCard {
+        padding: 2em;
+        border: 1px solid #efefef;       
 
     }   
 
@@ -414,8 +454,6 @@ footer {
     width: 99.999%; /* 100% causes distortion when scaling */
     height: 0;
     padding-top: 99.999%; /* Must equal width */
-
-
     } 
 
     .idSocial {

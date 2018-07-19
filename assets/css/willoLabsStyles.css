@@ -233,6 +233,55 @@ textarea {
 #idCardSmithBrad .idImage {
   background-image: url("../img/team/smith_brad.jpg"); }
 
+/* Background image definitions for ID Cards */
+#idCardPearson .idImage {
+  background-image: url("../img/partners_industry/Pearson Logo.png"); }
+
+#idCardCarnegieLearning .idImage {
+  background-image: url("../img/partners_industry/Carnegie Logo.png"); }
+
+#idCardBibliotech .idImage {
+  background-image: url("../img/partners_industry/Bibliotech Logo.png"); }
+
+#idCardTexidium .idImage {
+  background-image: url("../img/partners_industry/Texidium Logo.png"); }
+
+#idCardAmplifier .idImage {
+  background-image: url("../img/partners_industry/Amp Logo.png"); }
+
+#idCardCatalystEducation .idImage {
+  background-image: url("../img/partners_industry/Catalyst Logo.png"); }
+
+#idCardSchoology .idImage {
+  background-image: url("../img/partners_industry/Schoology Logo.png"); }
+
+#idCardD2L .idImage {
+  background-image: url("../img/partners_industry/D2L Logo.png"); }
+
+#idCardCanvas .idImage {
+  background-image: url("../img/partners_industry/Canvas Logo.jpeg"); }
+
+#idCardBlackboard .idImage {
+  background-image: url("../img/partners_industry/Blackboard Logo.jpeg"); }
+
+#idCardMoodle .idImage {
+  background-image: url("../img/partners_industry/Moodle Logo.png"); }
+
+#idCardAPA .idImage {
+  background-image: url("../img/partners_industry/APA Logo.png"); }
+
+#idCardNelson .idImage {
+  background-image: url("../img/partners_industry/Nelson Logo.png"); }
+
+#idCardNebraskaRatex .idImage {
+  background-image: url("../img/partners_industry/Nebraska Logo.png"); }
+
+#idCardICBA .idImage {
+  background-image: url("../img/partners_industry/ICBA Logo.png"); }
+
+#idCardNACS .idImage {
+  background-image: url("../img/partners_industry/NACS Logo.jpeg"); }
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
@@ -564,16 +613,36 @@ footer {
 
 #about .row {
   margin-bottom: 2em; }
+#about.team .idCard {
+  max-height: 360px;
+  min-height: 340px; }
+#about.team .idImageSocialContainer {
+  position: relative;
+  width: 100%;
+  height: inherit;
+  margin-bottom: 1.2em; }
+#about.partners-industry .idCard {
+  max-height: 240px;
+  min-height: 200px; }
+#about.partners-industry .idImageSocialContainer {
+  position: relative;
+  width: 100%;
+  height: inherit;
+  margin-bottom: .5em; }
+#about.partners-industry .idImage {
+  background-size: 99.999%;
+  padding-top: 100px;
+  top: 0;
+  left: 0;
+  max-height: 100px;
+  min-height: 100px;
+  height: 100px;
+  max-width: 300px; }
+  #about.partners-industry .idImage.portrait {
+    background-size: auto 99.99%; }
 #about .idCard {
   padding: 2em;
-  border: 1px solid #efefef;
-  max-height: 330px;
-  min-height: 290px; }
-  #about .idCard .idImageSocialContainer {
-    position: relative;
-    width: 100%;
-    height: inherit;
-    margin-bottom: 1.2em; }
+  border: 1px solid #efefef; }
 #about .idImage, #about .idSocial {
   width: 99.999%;
   /* 100% causes distortion when scaling */
