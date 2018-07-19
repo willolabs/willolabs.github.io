@@ -10,6 +10,7 @@
 @import 'backgrounds';
 @import 'forms';
 @import 'team';
+@import 'investors';
 @import 'partners_industry';
 @import 'responsive';
 
@@ -392,11 +393,13 @@ footer {
 	}
 }
 
-#about {
+#about,
+#aboutInvestors {
 
     .row { margin-bottom: 2em; }
 
-    &.team {
+    &.team,
+    &.investors {
 
         .idCard {
             max-height: 360px;
@@ -407,6 +410,7 @@ footer {
             width: 100%;
             height: inherit;
             margin-bottom: 1.2em;
+            border: 1px solid #efefef;
         }
     }
 
