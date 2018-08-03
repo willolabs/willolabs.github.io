@@ -260,6 +260,22 @@ textarea {
   margin-bottom: 1em; }
 
 /* Background image definitions for ID Cards */
+#idCardSaintLeoUniversity .idImage {
+  background-image: url("../img/partners_college/St Leo Logo.png"); }
+
+#idCardCamosun .idImage {
+  background-image: url("../img/partners_college/Camosun Logo.jpeg"); }
+
+#idCardLangaraCollege .idImage {
+  background-image: url("../img/partners_college/Langara Logo.png"); }
+
+#idCardCaplianoUniversity .idImage {
+  background-image: url("../img/partners_college/Capilano Logo.jpeg"); }
+
+#idCardUniversityLethbridge .idImage {
+  background-image: url("../img/partners_college/Lethbridge Logo.png"); }
+
+/* Background image definitions for ID Cards */
 #idCardPearson .idImage {
   background-image: url("../img/partners_industry/Pearson Logo.png"); }
 
