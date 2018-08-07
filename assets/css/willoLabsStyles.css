@@ -669,28 +669,32 @@ footer {
   height: inherit;
   margin-bottom: 1.2em;
   border: 1px solid #efefef; }
-#about.partners-industry .idCard,
-#aboutInvestors.partners-industry .idCard {
+#about.partners-industry .idCard, #about.partners-college .idCard,
+#aboutInvestors.partners-industry .idCard,
+#aboutInvestors.partners-college .idCard {
   max-height: 240px;
   min-height: 200px; }
-#about.partners-industry .idImageSocialContainer,
-#aboutInvestors.partners-industry .idImageSocialContainer {
+#about.partners-industry .idImageSocialContainer, #about.partners-college .idImageSocialContainer,
+#aboutInvestors.partners-industry .idImageSocialContainer,
+#aboutInvestors.partners-college .idImageSocialContainer {
   position: relative;
   width: 100%;
   height: inherit;
   margin-bottom: .5em; }
-#about.partners-industry .idImage,
-#aboutInvestors.partners-industry .idImage {
-  background-size: 99.999%;
+#about.partners-industry .idImage, #about.partners-college .idImage,
+#aboutInvestors.partners-industry .idImage,
+#aboutInvestors.partners-college .idImage {
+  background-size: contain;
   padding-top: 100px;
   top: 0;
   left: 0;
   max-height: 100px;
-  min-height: 100px;
+  min-height: 90px;
   height: 100px;
   max-width: 300px; }
-  #about.partners-industry .idImage.portrait,
-  #aboutInvestors.partners-industry .idImage.portrait {
+  #about.partners-industry .idImage.portrait, #about.partners-college .idImage.portrait,
+  #aboutInvestors.partners-industry .idImage.portrait,
+  #aboutInvestors.partners-college .idImage.portrait {
     background-size: auto 99.99%; }
 #about .idCard,
 #aboutInvestors .idCard {

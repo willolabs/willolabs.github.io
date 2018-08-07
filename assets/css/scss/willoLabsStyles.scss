@@ -415,7 +415,8 @@ footer {
         }
     }
 
-    &.partners-industry {
+    &.partners-industry,
+    &.partners-college {
 
         .idCard {
             max-height: 240px;
@@ -430,12 +431,12 @@ footer {
         }
 
         .idImage {
-            background-size: 99.999%;
+            background-size: contain;
             padding-top: 100px;
             top: 0;
             left: 0;
             max-height: 100px;
-            min-height: 100px;
+            min-height: 90px;
             height: 100px;
             max-width: 300px;
         
