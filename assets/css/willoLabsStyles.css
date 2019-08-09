@@ -282,6 +282,9 @@ textarea {
   background-image: url("../img/partners_college/Lethbridge Logo.png"); }
 
 /* Background image definitions for ID Cards */
+#idCardPanOpen .idImage {
+  background-image: url("../img/partners_industry/Pan Open Logo.png"); }
+
 #idCardPearson .idImage {
   background-image: url("../img/partners_industry/Pearson Logo.png"); }
 
