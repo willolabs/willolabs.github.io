@@ -59,7 +59,7 @@ $(document).ready(function(){
 
         $(result.industry).each(function(index,value){
             var industryArr = [];
-
+			industryArr.id = value.id;
             industryArr.name = value.name;
 			industryArr.url = value.url;
 			industryArr.img_path = value.img_path;
@@ -71,7 +71,8 @@ $(document).ready(function(){
 
         $(result.college).each(function(index,value) {
             var collegeArr = [];
-
+			
+			collegeArr.id = value.id;
             collegeArr.name = value.name;
 			collegeArr.url = value.url;
 			collegeArr.img_path = value.img_path;
@@ -98,6 +99,7 @@ $(document).ready(function(){
 		
 		
 		for (var i = 0; i < partnerCount; i++) {
+			var partnerID = '';
 			var name = '';
 			var url = '';
 			var path = '';
@@ -105,6 +107,7 @@ $(document).ready(function(){
 			var location = '';
 			
 			if (partnerType === 'industry') {
+				partnerID = industryCollection[i].id;
 				name = industryCollection[i].name;
 				url = industryCollection[i].url;
 				path = industryCollection[i].img_path;
@@ -112,15 +115,18 @@ $(document).ready(function(){
 				location = '.partners-industry';
 			}
 			if (partnerType === 'college') {
+				partnerID = collegeCollection[i].id;
 				name = collegeCollection[i].name;
 				url = collegeCollection[i].url;
 				path = collegeCollection[i].img_path;
 				active = collegeCollection[i].active;
 				location = '.partners-college';
 			}
-
+			
+			
+			
 			// Using display: grid so we don't have to worry about rows and columns here
-				catalog += "<a class='card' href='" + url + "'>";
+				catalog += "<a id='" + partnerID + "' class='card' href='" + url + "'>";
 				catalog += "<img src='http://www.stmykal.com/willow/" + path + "' alt=''>";
 				// We want there to be some screen reader text for assistive tech, but not display the text on screen
 				catalog += "<p class='visuallyHidden'>" + name + "</p>";
