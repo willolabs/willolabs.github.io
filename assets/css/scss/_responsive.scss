@@ -145,6 +145,10 @@ iPad 3
     #home .introduction.default {
         margin: 15% auto;
     }
+    #about .catalog { 
+		grid-column-gap: 20px;
+		grid-template-columns: repeat(3, 1fr);
+	}
     
 }
 
