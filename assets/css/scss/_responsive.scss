@@ -150,4 +150,8 @@ iPad 3
 
 @media only screen and (max-width : 600px) { 
     #navigation ul li { margin-right: 30px; }
+    #about .catalog { 
+		grid-column-gap: 20px;
+		grid-template-columns: repeat(2, 1fr);
+	}
 }

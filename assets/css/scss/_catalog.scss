@@ -7,6 +7,11 @@
     justify-items: center;
     align-items: center;
 
+    #apa_001.card,
+    #nbc_001.card {
+	    grid-column: 1 / span 2;
+    }
+
     a.card,
     a:link.card {
         padding: 12px;
@@ -23,7 +28,6 @@
         }
         img {
             max-width: 100%;
-            max-height: 100%;
             margin: 0 auto;
             align-self: center;
         }
@@ -33,12 +37,6 @@
     a.card:hover {
         box-shadow: 0px 0px 12px $light-gray;
         text-decoration: none;
-    }
-
-    /* Handling wide logos */
-    #apa_001.card,
-    #nbc_001.card {
-	    grid-column: 1 / span 2;
     }
 
 }

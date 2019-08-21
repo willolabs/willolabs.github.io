@@ -424,7 +424,10 @@ textarea {
   margin-bottom: 2em;
   justify-items: center;
   align-items: center;
-  /* Handling wide logos */
+}
+#about .catalog #apa_001.card,
+#about .catalog #nbc_001.card {
+  grid-column: 1/span 2;
 }
 #about .catalog a.card,
 #about .catalog a:link.card {
@@ -445,17 +448,12 @@ textarea {
 #about .catalog a.card img,
 #about .catalog a:link.card img {
   max-width: 100%;
-  max-height: 100%;
   margin: 0 auto;
   align-self: center;
 }
 #about .catalog a.card:hover {
   box-shadow: 0px 0px 12px #cecece;
   text-decoration: none;
-}
-#about .catalog #apa_001.card,
-#about .catalog #nbc_001.card {
-  grid-column: 1/span 2;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -582,6 +580,11 @@ iPad 3
 @media only screen and (max-width: 600px) {
   #navigation ul li {
     margin-right: 30px;
+  }
+
+  #about .catalog {
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 html {
