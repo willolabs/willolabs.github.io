@@ -420,14 +420,18 @@ textarea {
   display: grid;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin-bottom: 2em;
   justify-items: center;
   align-items: center;
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 #about .catalog #apa_001.card,
 #about .catalog #nbc_001.card {
-  grid-column: 1/span 2;
+  grid-column: span 2;
 }
 #about .catalog a.card,
 #about .catalog a:link.card {
@@ -462,6 +466,10 @@ textarea {
   .cover .column, .cover .columns {
     float: none;
     position: relative;
+  }
+
+  #about .catalog {
+    width: 100%;
   }
 }
 /* Smartphones (landscape) ----------- */
@@ -575,6 +583,14 @@ iPad 3
 
   #home .introduction.default {
     margin: 15% auto;
+  }
+
+  #about .catalog {
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #about .catalog #apa_001.card {
+    grid-column: span 3;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -904,6 +920,11 @@ footer #footerLinks ul li {
   height: inherit;
   margin-bottom: 1.2em;
   border: 1px solid #efefef;
+}
+#about.partners-industry, #about.partners-college,
+#aboutInvestors.partners-industry,
+#aboutInvestors.partners-college {
+  /* ID card styles no longer used for industry and college partners */
 }
 #about.partners-industry .idCard, #about.partners-college .idCard,
 #aboutInvestors.partners-industry .idCard,

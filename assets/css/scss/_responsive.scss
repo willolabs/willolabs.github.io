@@ -5,6 +5,9 @@
         float: none;
         position: relative;
     }
+    #about .catalog {
+        width: 100%;
+    }
 }
 
 /* Smartphones (landscape) ----------- */
@@ -147,7 +150,12 @@ iPad 3
     }
     #about .catalog { 
 		grid-column-gap: 20px;
-		grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        
+        #apa_001.card {
+            grid-column: span 3;
+        }
+        
 	}
     
 }
