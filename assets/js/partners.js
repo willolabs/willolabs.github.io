@@ -17,11 +17,11 @@ $(document).ready(function(){
 
 	function initializePage(response) {
 		parseJSON(response);
-		
+		console.log('foo');
 		// Pass object size to functions that build our page
 		var industryLength = industryCollection.length;
 		var collegeLength = collegeCollection.length;
-			
+		console.log(industryCollection);	
 		industryCollection.sort(
 			function(a,b) {
 				if (a.name < b.name) {
@@ -32,6 +32,7 @@ $(document).ready(function(){
 				}
 			}
 		);
+		console.log(industryCollection);
 		collegeCollection.sort(
 			function(a,b) {
 				if (a.name < b.name) {

@@ -1,0 +1,16 @@
+/* CSS Document */
+#content-news {
+	.release {
+		margin-bottom: 1.8em;
+
+		h2.news-headline {
+			margin-bottom: 0;
+			font-size: 1.2em;
+		}
+		.dateline {
+			margin-top: 0;
+			font-size: .8em;
+			color: $medium-gray;
+		}
+	}
+}
