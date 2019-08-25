@@ -128,7 +128,7 @@ $(document).ready(function(){
 			
 			// Using display: grid so we don't have to worry about rows and columns here
 				catalog += "<a id='" + partnerID + "' class='card' href='" + url + "'>";
-				catalog += "<img src='http://www.stmykal.com/willow/" + path + "' alt=''>";
+				catalog += "<img src='https://www.willolabs.com/" + path + "' alt=''>";
 				// We want there to be some screen reader text for assistive tech, but not display the text on screen
 				catalog += "<p class='visuallyHidden'>" + name + "</p>";
 				catalog += "</a>";			
