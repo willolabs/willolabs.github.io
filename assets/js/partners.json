@@ -1,0 +1,270 @@
+{
+    "industry": [
+        {
+            "id": "cl_001",
+            "name": "Carnegie Learning",
+            "url": "https://www.carnegielearning.com/",
+            "img_path":"assets/img/partners_industry/carnegie_logo.png",
+            "active": "true"
+        },
+		{
+			"id": "gw_001",
+			"name": "Goodheart-Wilcox",
+			"url": "https://www.g-w.com/",
+			"img_path":"assets/img/partners_industry/goodheart_wilcox_logo.png",
+			"active":"true"
+		},
+        {
+            "id": "pear_001",
+            "name": "Pearson",
+            "url": "http://www.pearson.com",
+            "img_path":"assets/img/partners_industry/pearson_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "bib_001",
+            "name": "Bibliotech",
+            "url": "https://bibliotech.education/",
+            "img_path":"assets/img/partners_industry/bibliotech_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "tk_001",
+            "name": "Texidium/Kivuto",
+            "url": "https://texidium.com/",
+            "img_path":"assets/img/partners_industry/texidium_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "akf_001",
+            "name": "Amplifire Knowledge Factor",
+            "url": "https://amplifire.com/",
+            "img_path":"assets/img/partners_industry/amp_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "ce_001",
+            "name": "Catalyst Education",
+            "url": "http://www.catalyst-ed.org/",
+            "img_path":"assets/img/partners_industry/catalyst_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "sch_001",
+            "name": "Schoology",
+            "url": "https://www.schoology.com/",
+            "img_path":"assets/img/partners_industry/schoology_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "d2l_001",
+            "name": "D2L",
+            "url": "https://www.d2l.com/",
+            "img_path":"assets/img/partners_industry/d2l_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "can_001",
+            "name": "Canvas",
+            "url": "https://www.canvaslms.com/",
+            "img_path":"assets/img/partners_industry/canvas_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "bb_001",
+            "name": "Blackboard",
+            "url": "http://www.blackboard.com/",
+            "img_path":"assets/img/partners_industry/blackboard_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "moo_001",
+            "name": "Moodle",
+            "url": "https://moodle.com/",
+            "img_path":"assets/img/partners_industry/moodle_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "apa_001",
+            "name": "American Psychological Association",
+            "url": "https://education.psychiatry.org/",
+            "img_path":"assets/img/partners_industry/apa_logo.png",
+            "active": "true"
+        },        
+        {
+            "id": "nel_001",
+            "name": "Nelson",
+            "url": "https://www.nelson.com/",
+            "img_path":"assets/img/partners_industry/nelson_logo.png",
+            "active": "true"
+        },        
+        {
+            "id": "nbc_001",
+            "name": "Nebraska Book Company",
+            "url": "http://nebook.com/",
+            "img_path":"assets/img/partners_industry/nebraska_book_logo.png",
+            "active": "true"
+        },        
+        {
+            "id": "icba_001",
+            "name": "Independent College Bookstore Association",
+            "url": "http://www.icbainc.com/",
+            "img_path":"assets/img/partners_industry/icba_logo.png",
+            "active": "true"
+        },        {
+            "id": "nacs_001",
+            "name": "National Association of College Stores",
+            "url": "https://www.nacs.org/educationevents/online.aspx",
+            "img_path":"assets/img/partners_industry/nacs_logo.png",
+            "active": "true"
+        },        {
+            "id": "po_001",
+            "name": "panOpen",
+            "url": "https://www.panopen.com/",
+            "img_path":"assets/img/partners_industry/pan_open_logo.png",
+            "active": "true"
+        },        
+        {
+            "id": "osx_001",
+            "name": "OpenStax",
+            "url": "https://openstax.org/",
+            "img_path":"/assets/img/partners_industry/open_stax_logo.png",
+            "active": "true"
+        },        
+        {
+            "id": "wwn_001",
+            "name": "WW Norton",
+            "url": "https://wwnorton.com/home",
+            "img_path":"assets/img/partners_industry/ww_norton_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "mac_001",
+            "name": "Macmillan",
+            "url": "http://www.macmillaneducation.com/",
+            "img_path":"assets/img/partners_industry/macmillan_logo.png",
+            "active": "true"
+        },        
+        {
+            "id": "chem_001",
+            "name": "Chem101",
+            "url": "https://www.101edu.co/",
+            "img_path":"assets/img/partners_industry/chem_101_logo.png",
+            "active": "true"
+        },       
+        {
+            "id": "jbl_001",
+            "name": "Jones & Bartlett Learning",
+            "url": "https://www.jblearning.com/",
+            "img_path":"assets/img/partners_industry/jones_bartlett_learning_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "ims_001",
+            "name": "IMS Global",
+            "url": "https://www.imsglobal.org/",
+            "img_path":"assets/img/partners_industry/ims_global_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "educ_001",
+            "name": "EDUCAUSE",
+            "url": "https://www.educause.edu/",
+            "img_path":"assets/img/partners_industry/educause_logo.png",
+            "active": "true"
+        }
+    ],
+    "college": [
+        {
+            "id":"slu_001",
+            "name":"Saint Leo University",
+            "url":"https://info.online.saintleo.edu",
+            "img_path":"assets/img/partners_college/saint_leo_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "ulca__001",
+            "name": "University of Lethbridge (CA)",
+            "url":  "https://www.uleth.ca/",
+            "img_path": "assets/img/partners_college/lethbridge_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "camo_001",
+            "name": "Camosun",
+            "url":  "http://camosun.ca/",
+            "img_path": "assets/img/partners_college/camosun_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "lc_001",
+            "name": "Langara College",
+            "url":  "https://langara.ca/",
+            "img_path": "assets/img/partners_college/langara_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "caca_001",
+            "name": "Capilano University (CA)",
+            "url":  "https://www.capilanou.ca/",
+            "img_path": "assets/img/partners_college/capilano_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "osu_001",
+            "name": "Oklahoma State University",
+            "url":  "https://go.okstate.edu/",
+            "img_path": "assets/img/partners_college/oklahoma_state_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "uk_001",
+            "name": "University of Kansas",
+            "url":  "https://ku.edu/",
+            "img_path": "assets/img/partners_college/university_of_kansas_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "uni_001",
+            "name": "University of Northern Iowa",
+            "url":  "https://uni.edu/",
+            "img_path": "assets/img/partners_college/university_of_northern_iowa_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "washu_001",
+            "name": "Washburn University",
+            "url":  "https://washburn.edu/",
+            "img_path": "assets/img/partners_college/washburn_university_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "flcc_001",
+            "name": "Finger Lakes Community College",
+            "url":  "https://flcc.edu/",
+            "img_path": "assets/img/partners_college/finger_lakes_community_college_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "mcc_001",
+            "name": "Monroe Community College",
+            "url":  "https://www.monroecc.edu/",
+            "img_path": "assets/img/partners_college/monroe_community_college_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "hacc_001",
+            "name": "Harrisburg Area Community College",
+            "url":  "https://www.hacc.edu/",
+            "img_path": "assets/img/partners_college/hacc_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "snhu_001",
+            "name": "Southern New Hampshire University",
+            "url":  "https://www.snhu.edu/",
+            "img_path": "assets/img/partners_college/southern_new_hampshire_university_logo.png",
+            "active": "true"
+        }
+    ]
+}

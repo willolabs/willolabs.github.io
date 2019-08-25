@@ -1,0 +1,47 @@
+#about .catalog {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 2em;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+    #apa_001.card,
+    #nbc_001.card {
+	    grid-column: span 2;
+    }
+
+    a.card,
+    a:link.card {
+        padding: 12px;
+        box-sizing: border-box;
+        text-decoration: none;
+        background: $white;
+
+        h3 {
+            margin-top: 0;
+            text-decoration: none;
+        }
+        p {
+            text-decoration: none;
+        }
+        img {
+            max-width: 100%;
+            margin: 0 auto;
+            align-self: center;
+        }
+
+    }
+
+    a.card:hover {
+        box-shadow: 0px 0px 12px $light-gray;
+        text-decoration: none;
+    }
+
+}

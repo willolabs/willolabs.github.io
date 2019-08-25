@@ -333,12 +333,64 @@ textarea {
 #idCardNACS .idImage {
   background-image: url("../img/partners_industry/NACS Logo.jpeg"); }
 
+#about .catalog {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 2em;
+  justify-items: center;
+  align-items: center;
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box; }
+  #about .catalog #apa_001.card,
+  #about .catalog #nbc_001.card {
+    grid-column: span 2; }
+  #about .catalog a.card,
+  #about .catalog a:link.card {
+    padding: 12px;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: #FFF; }
+    #about .catalog a.card h3,
+    #about .catalog a:link.card h3 {
+      margin-top: 0;
+      text-decoration: none; }
+    #about .catalog a.card p,
+    #about .catalog a:link.card p {
+      text-decoration: none; }
+    #about .catalog a.card img,
+    #about .catalog a:link.card img {
+      max-width: 100%;
+      margin: 0 auto;
+      align-self: center; }
+  #about .catalog a.card:hover {
+    box-shadow: 0px 0px 12px #cecece;
+    text-decoration: none; }
+
+/* CSS Document */
+#content-news .release {
+  margin-bottom: 1.8em; }
+  #content-news .release h2.news-headline {
+    margin-bottom: 0;
+    font-size: 1.2em; }
+  #content-news .release .dateline {
+    margin-top: 0;
+    font-size: .8em;
+    color: #999; }
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
   .cover .column, .cover .columns {
     float: none;
-    position: relative; } }
+    position: relative; }
+
+  #about .catalog {
+    width: 100%; } }
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
   /* Styles */
@@ -421,10 +473,20 @@ iPad 3
       text-align: center; }
 
   #home .introduction.default {
-    margin: 15% auto; } }
+    margin: 15% auto; }
+
+  #about .catalog {
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(3, 1fr); }
+    #about .catalog #apa_001.card {
+      grid-column: span 3; } }
 @media only screen and (max-width: 600px) {
   #navigation ul li {
-    margin-right: 30px; } }
+    margin-right: 30px; }
+
+  #about .catalog {
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(2, 1fr); } }
 html {
   height: 100%;
   min-height: 100%;
@@ -678,33 +740,37 @@ footer {
   height: inherit;
   margin-bottom: 1.2em;
   border: 1px solid #efefef; }
-#about.partners-industry .idCard, #about.partners-college .idCard,
-#aboutInvestors.partners-industry .idCard,
-#aboutInvestors.partners-college .idCard {
-  max-height: 240px;
-  min-height: 200px; }
-#about.partners-industry .idImageSocialContainer, #about.partners-college .idImageSocialContainer,
-#aboutInvestors.partners-industry .idImageSocialContainer,
-#aboutInvestors.partners-college .idImageSocialContainer {
-  position: relative;
-  width: 100%;
-  height: inherit;
-  margin-bottom: .5em; }
-#about.partners-industry .idImage, #about.partners-college .idImage,
-#aboutInvestors.partners-industry .idImage,
-#aboutInvestors.partners-college .idImage {
-  background-size: contain;
-  padding-top: 100px;
-  top: 0;
-  left: 0;
-  max-height: 100px;
-  min-height: 90px;
-  height: 100px;
-  max-width: 300px; }
-  #about.partners-industry .idImage.portrait, #about.partners-college .idImage.portrait,
-  #aboutInvestors.partners-industry .idImage.portrait,
-  #aboutInvestors.partners-college .idImage.portrait {
-    background-size: auto 99.99%; }
+#about.partners-industry, #about.partners-college,
+#aboutInvestors.partners-industry,
+#aboutInvestors.partners-college {
+  /* ID card styles no longer used for industry and college partners */ }
+  #about.partners-industry .idCard, #about.partners-college .idCard,
+  #aboutInvestors.partners-industry .idCard,
+  #aboutInvestors.partners-college .idCard {
+    max-height: 240px;
+    min-height: 200px; }
+  #about.partners-industry .idImageSocialContainer, #about.partners-college .idImageSocialContainer,
+  #aboutInvestors.partners-industry .idImageSocialContainer,
+  #aboutInvestors.partners-college .idImageSocialContainer {
+    position: relative;
+    width: 100%;
+    height: inherit;
+    margin-bottom: .5em; }
+  #about.partners-industry .idImage, #about.partners-college .idImage,
+  #aboutInvestors.partners-industry .idImage,
+  #aboutInvestors.partners-college .idImage {
+    background-size: contain;
+    padding-top: 100px;
+    top: 0;
+    left: 0;
+    max-height: 100px;
+    min-height: 90px;
+    height: 100px;
+    max-width: 300px; }
+    #about.partners-industry .idImage.portrait, #about.partners-college .idImage.portrait,
+    #aboutInvestors.partners-industry .idImage.portrait,
+    #aboutInvestors.partners-college .idImage.portrait {
+      background-size: auto 99.99%; }
 #about .idCard,
 #aboutInvestors .idCard {
   padding: 2em;
@@ -807,5 +873,3 @@ footer {
   margin: -1px;
   padding: 0;
   border: 0; }
-
-/*# sourceMappingURL=willoLabsStyles.css.map */
