@@ -39,11 +39,11 @@
 
     $(window).on("resize", function() {
         windowWidth = $(window).width();
-        if (windowWidth <= 520) {
+        if (windowWidth <= 600) {
             $('#navigation').addClass('collapsed');
         }
 
-        if (windowWidth >= 520) {
+        if (windowWidth >= 600) {
             $('#navigation').removeClass('collapsed');
         }
     }).resize();
