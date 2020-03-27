@@ -6,6 +6,35 @@
 		h2.news-headline {
 			margin-bottom: 0;
 			font-size: 1.2em;
+			font-family: 'quicksandregular';
+			
+			a, a:link, a:visited {
+				color: $blue;
+			}
+			
+			a:hover, a:active, a:focus {
+				color: $blue;
+				text-decoration: underline;
+			}
+		}
+		.category {
+			margin-bottom: 0.25rem;
+			background-color: $brandColor;
+			color: $white;
+			font-size: .8em;
+			padding: 2px 8px;
+			
+			p {
+				margin: 0;
+			}
+			
+			
+		}
+
+		.teaser {
+			margin-bottom: 0.2rem;
+			font-size: 1em;
+			color: $medium-gray;
 		}
 		.dateline {
 			margin-top: 0;
