@@ -2,29 +2,50 @@
 
 /* Set the height of the current slide to browser viewport */
 /* Plus a little for breathing room */
-/* Thanks Stack Overflow */
+var offsetHeight = 10;
+var sectionOffset = 40;
+var headerHeight = '';
+var bannerHeight = '';
+var alertBanner = false;
+var sectionPadding = '';
 
-    var windowHeight = $(window).height();
-    var offsetHeight = 10;
-    windowHeight = windowHeight + offsetHeight;
+layoutHeader();
+setCover();
+
+function layoutHeader() {
 	
-	var headerHeight = $('#header').height();
-    var sectionOffset = 40;
-    var sectionPadding = headerHeight + sectionOffset;
+	headerHeight = $('#header').height();
 
-	var bannerHeight = '';
-	var alertBanner = false;
 	if ($('#alert-banner').length > 0) {
 		alertBanner = true;
 		bannerHeight = $('#alert-banner').outerHeight();
-		var alertOffset = bannerHeight + 'px';
-		$('#header').css('top',alertOffset);
-		sectionPadding = bannerHeight + headerHeight + sectionOffset;
-	}
 
+		var alertOffset = bannerHeight + 'px';
+		$('#header').css('top', alertOffset);
+		
+		sectionPadding = bannerHeight + headerHeight + sectionOffset;
+		$('.section.first').css('padding-top', sectionPadding);
+		
+	} else {
+		alertBanner = false;
+		sectionPadding = headerHeight + sectionOffset;
+	}
+	
+
+}
+
+// Size the size of the cover images to the size of the window
+function setCover() {
+	
+	var windowHeight = $(window).height();
+	windowHeight = windowHeight + offsetHeight;
 
     $('.section.cover').css('min-height', windowHeight );
-    $('.section.first').css('padding-top',sectionPadding);
+    $('.section.first').css('padding-top', sectionPadding);
+
+}
+
+
 
     $(window).resize(function() {
         
@@ -32,9 +53,9 @@
         $('.section.cover').css('min-height',windowHeight);
  
         var headerHeight = $('#header').height();
-        var offsetHeight = 10;
+
         var windowHeight = windowHeight + offsetHeight;
-        var sectionOffset = 40;
+
         var sectionPadding = '';
 		
 		if (alertBanner) { 
@@ -69,12 +90,48 @@
     }).resize();
 
 
+	function toggleAlert() {
+		
+		if ($('#alert-body').attr('hidden')) {
+			$('#alert-body').removeAttr('hidden');
+			$('#accordion-alert-button').attr('aria-expanded','true');
+			
+			// If the sidebar is open, close it
+			if ($('#navigation ul').hasClass('sidebar')) {
+				$('#navigation.collapsed ul').removeClass('sidebar');
+                $('#header, #main').removeClass('slide transition');
+                $('body').css('overflow-x','visible');
+			}
+			
+		} else {
+			$('#alert-body').attr('hidden','true');
+			$('#accordion-alert-button').attr('aria-expanded','false');
+		}
+		layoutHeader();
+	}
+
+	// Handle the opening and closing of the alert banner
+	$('.alert-banner-button-container').on('click','#accordion-alert-button', function(){
+		toggleAlert();
+	});
+
+
+
 
     // Handle the navigation behavior
     $(document).ready(function() {
 
         $('.js-hamburger-link').click(function() {
-
+			
+			// make sure we close the alert bar, if it's open
+			if (!$('#alert-body').attr('hidden','true')) { 
+				$('#alert-body').attr('hidden','true');
+				$('#accordion-alert-button').attr('aria-expanded','false');
+				
+			}
+			
+			layoutHeader();
+			
             if ($('#navigation ul').hasClass('sidebar')) {
                 $('#navigation.collapsed ul').removeClass('sidebar');
                 $('#header, #main').removeClass('slide transition');
@@ -88,7 +145,7 @@
         });
 
         $('.js-toggle-menu').click(function() {
-
+			
             if ($('#navigation ul').hasClass('sidebar')) {
                 $('#navigation.collapsed ul').removeClass('sidebar');
                 $('#header, #main').removeClass('slide transition');

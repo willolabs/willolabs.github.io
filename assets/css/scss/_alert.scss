@@ -1,7 +1,7 @@
 /* Scss Document */
 
 #alert-banner {
-	background: $brandColor;
+	
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -10,16 +10,34 @@
 	margin: 0;
 	padding: 0;
 	
+	.alert-banner-button-container {
+		background: $brandColor;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	
+	.alert-banner-button-container:hover {
+		background: lighten($brandColor, 10%);
+	}
+	
 	button {
 		border: none;
 		color: $white;
-		padding: .5rem;
-		margin: 0;
+		padding: .5em;
+		margin: .5em 0;
 		white-space: normal;
 		text-decoration: underline;
 		text-decoration-style: solid;
 		text-transform: initial;
 		line-height: 1.6;
+	}
+	#accordion-alert-button:hover,
+	#accordion-alert-button:focus,
+	#accordion-alert-button:active {
+		text-decoration: none;
+		font-weight: bold;
 	}
 	
 	#alert-body {
@@ -49,3 +67,4 @@
 		
 	}
 }
+
