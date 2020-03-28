@@ -6,11 +6,21 @@
 
     var windowHeight = $(window).height();
     var offsetHeight = 10;
-    var windowHeight = windowHeight + offsetHeight;
-
-    var headerHeight = $('#header').height();
+    windowHeight = windowHeight + offsetHeight;
+	
+	var headerHeight = $('#header').height();
     var sectionOffset = 40;
     var sectionPadding = headerHeight + sectionOffset;
+
+	var bannerHeight = '';
+	var alertBanner = false;
+	if ($('#alert-banner').length > 0) {
+		alertBanner = true;
+		bannerHeight = $('#alert-banner').outerHeight();
+		var alertOffset = bannerHeight + 'px';
+		$('#header').css('top',alertOffset);
+		sectionPadding = bannerHeight + headerHeight + sectionOffset;
+	}
 
 
     $('.section.cover').css('min-height', windowHeight );
@@ -20,12 +30,20 @@
         
         windowHeight = $(window).height();
         $('.section.cover').css('min-height',windowHeight);
-        
+ 
         var headerHeight = $('#header').height();
         var offsetHeight = 10;
         var windowHeight = windowHeight + offsetHeight;
         var sectionOffset = 40;
-        var sectionPadding = headerHeight + sectionOffset;        
+        var sectionPadding = '';
+		
+		if (alertBanner) { 
+			bannerHeight = $('#alert-banner').outerHeight();
+			sectionPadding = bannerHeight + headerHeight + sectionOffset;
+			
+		} else {
+			sectionPadding = headerHeight + sectionOffset;  
+		}
         
         $('.section.cover.first').css('padding-top',sectionPadding);
         
@@ -38,7 +56,7 @@
 
 
     $(window).on("resize", function() {
-        windowWidth = $(window).width();
+        var windowWidth = $(window).width();
         if (windowWidth <= 600) {
             $('#navigation').addClass('collapsed');
         }
@@ -47,6 +65,8 @@
             $('#navigation').removeClass('collapsed');
         }
     }).resize();
+
+
 
     // Handle the navigation behavior
     $(document).ready(function() {
