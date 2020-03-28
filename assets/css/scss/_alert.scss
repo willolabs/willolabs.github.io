@@ -8,17 +8,44 @@
 	width: 100%;
 	z-index: 10000;
 	margin: 0;
-	padding: .5rem;
+	padding: 0;
 	
 	button {
 		border: none;
 		color: $white;
-		padding: 0;
+		padding: .5rem;
 		margin: 0;
 		white-space: normal;
 		text-decoration: underline;
 		text-decoration-style: solid;
 		text-transform: initial;
 		line-height: 1.6;
+	}
+	
+	#alert-body {
+		margin: 0 auto;
+        min-width: 320px;
+        padding: 2em 10%;
+        position: relative;
+        text-align: left;
+		background: $white;
+		
+		h1 {
+			font-size: 1.8em;
+			margin-bottom: .3em;
+		}
+		.teaser {
+			font-size: 1.2em;
+		}
+		
+		ol, ul {
+			margin-left: 2em;
+		}
+		
+		.disclaimer {
+			font-size: .8em;
+			text-align: right;
+		}
+		
 	}
 }

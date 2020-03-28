@@ -39,6 +39,8 @@
 		
 		if (alertBanner) { 
 			bannerHeight = $('#alert-banner').outerHeight();
+			var alertOffset = bannerHeight + 'px';
+			$('#header').css('top',alertOffset);
 			sectionPadding = bannerHeight + headerHeight + sectionOffset;
 			
 		} else {
