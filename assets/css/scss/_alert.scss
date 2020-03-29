@@ -26,12 +26,13 @@
 		border: none;
 		color: $white;
 		padding: .5em;
-		margin: .5em 0;
+		margin: .5em 0 .7em 0;
 		white-space: normal;
 		text-decoration: underline;
 		text-decoration-style: solid;
 		text-transform: initial;
-		line-height: 1.6;
+		line-height: 1.4;
+		font-size: 1.2em;
 	}
 	#accordion-alert-button:hover,
 	#accordion-alert-button:focus,
