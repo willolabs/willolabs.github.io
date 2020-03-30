@@ -14,32 +14,37 @@
 		background: $brandColor;
 		width: 100%;
 		margin: 0;
-		padding: 0;
+		padding: 1em 2em;
+		position: relative;
 		text-align: center;
+		
+		a.accordion-alert-button,
+		a.accordion-alert-button:link,
+		a.accordion-alert-button:visited {
+			border: none;
+			color: $white;
+			padding: .5em;
+			margin: 0;
+			white-space: normal;
+			text-decoration: underline;
+			text-decoration-style: solid;
+			text-transform: initial;
+			line-height: 1.4;
+			font-size: 1.2em;
+		}
+		a.accordion-alert-button:hover,
+		a.accordion-alert-button:focus,
+		a.accordion-alert-button:active {
+			text-decoration: none;
+		}
+		
 	}
 	
 	.alert-banner-button-container:hover {
 		background: lighten($brandColor, 10%);
 	}
 	
-	button {
-		border: none;
-		color: $white;
-		padding: .5em;
-		margin: .5em 0 .7em 0;
-		white-space: normal;
-		text-decoration: underline;
-		text-decoration-style: solid;
-		text-transform: initial;
-		line-height: 1.4;
-		font-size: 1.2em;
-	}
-	#accordion-alert-button:hover,
-	#accordion-alert-button:focus,
-	#accordion-alert-button:active {
-		text-decoration: none;
-		font-weight: bold;
-	}
+
 	
 	#alert-body {
 		margin: 0 auto;

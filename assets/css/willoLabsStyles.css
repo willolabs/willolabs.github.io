@@ -44,57 +44,6 @@
 /************************/
 /* WilloLabs Mixins     */
 /************************/
-/* Scss Document */
-#alert-banner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10000;
-  margin: 0;
-  padding: 0; }
-  #alert-banner .alert-banner-button-container {
-    background: #13701C;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: center; }
-  #alert-banner .alert-banner-button-container:hover {
-    background: #1a9c27; }
-  #alert-banner button {
-    border: none;
-    color: #FFF;
-    padding: .5em;
-    margin: .5em 0 .7em 0;
-    white-space: normal;
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-transform: initial;
-    line-height: 1.4;
-    font-size: 1.2em; }
-  #alert-banner #accordion-alert-button:hover,
-  #alert-banner #accordion-alert-button:focus,
-  #alert-banner #accordion-alert-button:active {
-    text-decoration: none;
-    font-weight: bold; }
-  #alert-banner #alert-body {
-    margin: 0 auto;
-    min-width: 320px;
-    padding: 2em 10%;
-    position: relative;
-    text-align: left;
-    background: #FFF; }
-    #alert-banner #alert-body h1 {
-      font-size: 1.8em;
-      margin-bottom: .3em; }
-    #alert-banner #alert-body .teaser {
-      font-size: 1.2em; }
-    #alert-banner #alert-body ol, #alert-banner #alert-body ul {
-      margin-left: 2em; }
-    #alert-banner #alert-body .disclaimer {
-      font-size: .8em;
-      text-align: right; }
-
 #header {
   background-color: rgba(0, 0, 0, 0.75);
   position: absolute;
@@ -452,6 +401,59 @@ textarea {
     margin-top: 0;
     font-size: .8em;
     color: #999; }
+
+/* Scss Document */
+#alert-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  margin: 0;
+  padding: 0; }
+  #alert-banner .alert-banner-button-container {
+    background: #13701C;
+    width: 100%;
+    margin: 0;
+    padding: 1em 2em;
+    position: relative;
+    text-align: center; }
+    #alert-banner .alert-banner-button-container a.accordion-alert-button,
+    #alert-banner .alert-banner-button-container a.accordion-alert-button:link,
+    #alert-banner .alert-banner-button-container a.accordion-alert-button:visited {
+      border: none;
+      color: #FFF;
+      padding: .5em;
+      margin: 0;
+      white-space: normal;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      text-transform: initial;
+      line-height: 1.4;
+      font-size: 1.2em; }
+    #alert-banner .alert-banner-button-container a.accordion-alert-button:hover,
+    #alert-banner .alert-banner-button-container a.accordion-alert-button:focus,
+    #alert-banner .alert-banner-button-container a.accordion-alert-button:active {
+      text-decoration: none; }
+  #alert-banner .alert-banner-button-container:hover {
+    background: #1a9c27; }
+  #alert-banner #alert-body {
+    margin: 0 auto;
+    min-width: 320px;
+    padding: 2em 10%;
+    position: relative;
+    text-align: left;
+    background: #FFF; }
+    #alert-banner #alert-body h1 {
+      font-size: 1.8em;
+      margin-bottom: .3em; }
+    #alert-banner #alert-body .teaser {
+      font-size: 1.2em; }
+    #alert-banner #alert-body ol, #alert-banner #alert-body ul {
+      margin-left: 2em; }
+    #alert-banner #alert-body .disclaimer {
+      font-size: .8em;
+      text-align: right; }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
