@@ -200,7 +200,7 @@ input[type="reset"]:focus,
 input[type="button"]:focus {
   color: #333;
   border-color: #888;
-  outline: 0; }
+   }
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -268,7 +268,7 @@ input[type="password"]:focus,
 textarea:focus,
 select:focus {
   border: 1px solid #33C3F0;
-  outline: 0; }
+  }
 label,
 legend {
   display: block;

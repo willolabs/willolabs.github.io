@@ -1,0 +1,84 @@
+/* Scss Document */
+
+#alert-banner {
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+	margin: 0;
+	padding: 0;
+	
+	.alert-banner-button-container {
+		background: $brandColor;
+		width: 100%;
+		margin: 0;
+		padding: 1em 2em;
+		position: relative;
+		text-align: center;
+		
+		a.accordion-alert-button,
+		a.accordion-alert-button:link,
+		a.accordion-alert-button:visited {
+			border: none;
+			color: $white;
+			padding: .5em;
+			margin: 0;
+			white-space: normal;
+			text-decoration: underline;
+			text-decoration-style: solid;
+			text-transform: initial;
+			line-height: 1.4;
+			font-size: 1.2em;
+		}
+		a.accordion-alert-button:hover,
+		a.accordion-alert-button:focus,
+		a.accordion-alert-button:active {
+			text-decoration: none;
+		}
+		
+		.accordion-direction {
+			margin-left: 1em;
+			
+			.accordion-direction-icon.expand {
+				transform: rotate(180deg);
+			}
+			
+		}
+	}
+	
+	.alert-banner-button-container:hover {
+		background: lighten($brandColor, 10%);
+	}
+	
+
+	
+	#alert-body {
+		margin: 0 auto;
+        min-width: 320px;
+        padding: 2em 10%;
+        position: relative;
+        text-align: left;
+		background: $white;
+		
+		h1 {
+			font-size: 1.8em;
+			margin-bottom: .3em;
+		}
+		.teaser {
+			font-size: 1.2em;
+		}
+		
+		ol, ul {
+			margin-left: 2em;
+		}
+		
+		.disclaimer {
+			font-size: .8em;
+			text-align: right;
+		}
+		
+	}
+}
+

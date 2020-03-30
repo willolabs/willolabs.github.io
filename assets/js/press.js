@@ -48,7 +48,9 @@ $(document).ready(function(){
             releaseArr.day      = value.day;
             releaseArr.month    = value.month;
             releaseArr.year     = value.year; 
+			releaseArr.category	= value.category;
             releaseArr.headline = value.headline;
+			releaseArr.text		= value.text;
 			releaseArr.url      = value.url;
             
             // Gernerate julian date
@@ -74,7 +76,7 @@ $(document).ready(function(){
 	// Append to HTML
 	
 	function buildPage(releaseCount) {
-		console.log(releaseCount);
+		// console.log(releaseCount);
 		var catalog = '';
 		
 		
@@ -82,13 +84,17 @@ $(document).ready(function(){
 			var day         = '';
 			var month       = '';
 			var year        = '';
+			var category	= '';
 			var headline    = '';
+			var teaser		= '';
 			var url         = '';
 			
             day         = releaseCollection[i].day;
             month       = releaseCollection[i].month;
             year        = releaseCollection[i].year;
+			category	= releaseCollection[i].category;
             headline    = releaseCollection[i].headline;
+            teaser		= releaseCollection[i].text;
             url         = releaseCollection[i].url;
 			
 			switch(month) {
@@ -128,9 +134,16 @@ $(document).ready(function(){
 				default:
 					month = "December";
 			}
+
 			
 			catalog += "<div class='release'>";
+			if (category.length > 0) {
+				catalog += "<div class='category'><p>" + category + "</p></div>";
+			}
 			catalog += "<h2 class='news-headline'><a href='"+ url +"'>" + headline + "</a></h2>";
+			if (teaser.length > 0) {
+				catalog += "<p class='teaser'>" + teaser + "</p>";
+			}
 			catalog += "<p class='dateline'>" + month + " " + day + ", " + year +"</p>";
 			catalog += "</div>";		
 			
