@@ -38,6 +38,14 @@
 			text-decoration: none;
 		}
 		
+		.accordion-direction {
+			margin-left: 1em;
+			
+			.accordion-direction-icon.expand {
+				transform: rotate(180deg);
+			}
+			
+		}
 	}
 	
 	.alert-banner-button-container:hover {

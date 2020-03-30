@@ -95,6 +95,8 @@ function setCover() {
 		if ($('#alert-body').attr('hidden')) {
 			$('#alert-body').removeAttr('hidden');
 			$('#accordion-alert-button').attr('aria-expanded','true');
+			// Rotate the disclosure icon
+			$('.accordion-direction-icon').addClass('expand');
 			
 			// If the sidebar is open, close it
 			if ($('#navigation ul').hasClass('sidebar')) {
@@ -106,6 +108,8 @@ function setCover() {
 		} else {
 			$('#alert-body').attr('hidden','true');
 			$('#accordion-alert-button').attr('aria-expanded','false');
+			// Rotate the disclosure icon
+			$('.accordion-direction-icon').removeClass('expand');
 		}
 		layoutHeader();
 	}
