@@ -1,0 +1,103 @@
+{
+    "team": [
+        {
+            "id": "HallAndy",
+            "name_last": "Hall",
+            "name_first": "Andy",
+            "name_middle": "",
+            "title": "CEO & Architect",
+            "url": "https://www.linkedin.com/in/andy-hall-4361a31/",
+            "image": "assets/img/team/hall_andy.jpg"
+        },
+        {
+            "id": "HangerMatt",
+            "name_last": "Hanger",
+            "name_first": "Matt",
+            "name_middle": "",
+            "title": "CTO",
+            "url": "https://www.linkedin.com/in/mattmatthanger/",
+            "image": "assets/img/team/hanger_matt.jpg"
+        },
+        {
+            "id": "McKainKate",
+            "name_last": "McKain",
+            "name_first": "Kate",
+            "name_middle": "",
+            "title": "President",
+            "url": "https://www.linkedin.com/in/kate-mckain-69450174/",
+            "image": "assets/img/team/mckain_kate.jpg"
+        },
+        {
+            "id": "SmithBrad",
+            "name_last": "Smith",
+            "name_first": "Brad",
+            "name_middle": "",
+            "title": "Senior Director of Sales",
+            "url": "https://www.linkedin.com/in/brad-smith-3a323879/",
+            "image": "assets/img/team/smith_brad.jpg"
+        },
+        {
+            "id": "StruyfBernard",
+            "name_last": "Struyf",
+            "name_first": "Bernard",
+            "name_middle": "",
+            "title": "Vice-President of Global Development",
+            "url": "https://www.linkedin.com/in/bernardstruyf/",
+            "image": "assets/img/team/struyf_bernard.jpg"
+        },
+        {
+            "id": "SponsellerAmi",
+            "name_last": "Sponseller",
+            "name_first": "Ami",
+            "name_middle": "",
+            "title": "Customer Success Manager",
+            "url": "https://www.linkedin.com/in/amisponseller/",
+            "image": "assets/img/team/sponseller_ami.jpg"
+        },
+        {
+            "id": "GappmeyerThomas",
+            "name_last": "Gappmeyer",
+            "name_first": "Thomas",
+            "name_middle": "",
+            "title": "Product & Implementation Manager",
+            "url": "https://www.linkedin.com/in/thomas-gappmayer-778b3131/",
+            "image": "assets/img/team/gappmeyer_thomas.jpg"
+        },
+        {
+            "id": "",
+            "name_last": "",
+            "name_first": "",
+            "name_middle": "",
+            "title": "",
+            "url": "",
+            "image": ""
+        },
+        {
+            "id": "GeigerSean",
+            "name_last": "Geiger",
+            "name_first": "Sean",
+            "name_middle": "",
+            "title": "System Architect",
+            "url": "https://www.linkedin.com/in/sean-geiger-5422771/",
+            "image": "assets/img/team/geiger_sean.jpg"
+        },
+        {
+            "id": "DaffornScott",
+            "name_last": "DaffornScott",
+            "name_first": "Scott",
+            "name_middle": "",
+            "title": "Senior Full-Stack Engineer",
+            "url": "https://www.linkedin.com/in/scottdafforn/",
+            "image": "assets/img/team/dafforn_scott.jpg"
+        },
+        {
+            "id": "HallMegan",
+            "name_last": "Hall",
+            "name_first": "Megan",
+            "name_middle": "",
+            "title": "Project Manager",
+            "url": "",
+            "image": "assets/img/team/hall_megan.jpg"
+        }
+    ]
+}
