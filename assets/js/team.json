@@ -99,5 +99,57 @@
             "url": "",
             "image": "assets/img/team/hall_megan.jpg"
         }
+    ],
+    "investors": [
+        {
+            "id": "CarasJames",
+            "name_last": "Caras",
+            "name_first": "James",
+            "name_middle": "",
+            "company_name": "",
+            "title": "",
+            "url": "https://www.linkedin.com/in/jamescaras/",
+            "image": "assets/img/investors/caras_james.jpg"
+        },
+        {
+            "id": "EicherTodd",
+            "name_last": "Eicher",
+            "name_first": "Todd",
+            "name_middle": "",
+            "company_name": "",
+            "title": "",
+            "url": "https://www.linkedin.com/in/todd-eicher-9191148/",
+            "image": "assets/img/investors/eicher_todd.jpg"
+        },
+        {
+            "id": "MartinsonJames",
+            "name_last": "Martinson",
+            "name_first": "James",
+            "name_middle": "",
+            "company_name": "",
+            "title": "",
+            "url": "https://www.linkedin.com/in/john-martinson-19719916/",
+            "image": "assets/img/investors/martinson_james.jpg"
+        },
+        {
+            "id": "Redblinky",
+            "name_last": "",
+            "name_first": "",
+            "name_middle": "",
+            "company_name": "Redblinky Holdings",
+            "title": "",
+            "url": "",
+            "image": "assets/img/investors/redblinky_holdings_logo.png"
+        },
+        {
+            "id": "UniversityVentures",
+            "name_last": "",
+            "name_first": "",
+            "name_middle": "",
+            "company_name": "University Ventures",
+            "title": "",
+            "url": "http://universityventures.com",
+            "image": "assets/img/investors/university_ventures_logo.jpg"
+        }
     ]
 }
