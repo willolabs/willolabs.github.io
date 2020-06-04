@@ -7,7 +7,8 @@
             "name_middle": "",
             "title": "CEO & Architect",
             "url": "https://www.linkedin.com/in/andy-hall-4361a31/",
-            "image": "assets/img/team/hall_andy.jpg"
+            "image": "assets/img/team/hall_andy.jpg",
+            "display_order": "1"
         },
         {
             "id": "HangerMatt",
@@ -16,7 +17,8 @@
             "name_middle": "",
             "title": "CTO",
             "url": "https://www.linkedin.com/in/mattmatthanger/",
-            "image": "assets/img/team/hanger_matt.jpg"
+            "image": "assets/img/team/hanger_matt.jpg",
+            "display_order": "2"
         },
         {
             "id": "McKainKate",
@@ -25,7 +27,8 @@
             "name_middle": "",
             "title": "President",
             "url": "https://www.linkedin.com/in/kate-mckain-69450174/",
-            "image": "assets/img/team/mckain_kate.jpg"
+            "image": "assets/img/team/mckain_kate.jpg",
+            "display_order": "3"
         },
         {
             "id": "SmithBrad",
@@ -34,7 +37,8 @@
             "name_middle": "",
             "title": "Senior Director of Sales",
             "url": "https://www.linkedin.com/in/brad-smith-3a323879/",
-            "image": "assets/img/team/smith_brad.jpg"
+            "image": "assets/img/team/smith_brad.jpg",
+            "display_order": "4"
         },
         {
             "id": "StruyfBernard",
@@ -43,7 +47,8 @@
             "name_middle": "",
             "title": "Vice-President of Global Development",
             "url": "https://www.linkedin.com/in/bernardstruyf/",
-            "image": "assets/img/team/struyf_bernard.jpg"
+            "image": "assets/img/team/struyf_bernard.jpg",
+            "display_order": "5"
         },
         {
             "id": "SponsellerAmi",
@@ -52,7 +57,8 @@
             "name_middle": "",
             "title": "Customer Success Manager",
             "url": "https://www.linkedin.com/in/amisponseller/",
-            "image": "assets/img/team/sponseller_ami.jpg"
+            "image": "assets/img/team/sponseller_ami.jpg",
+            "display_order": "6"
         },
         {
             "id": "GappmeyerThomas",
@@ -61,16 +67,8 @@
             "name_middle": "",
             "title": "Product & Implementation Manager",
             "url": "https://www.linkedin.com/in/thomas-gappmayer-778b3131/",
-            "image": "assets/img/team/gappmeyer_thomas.jpg"
-        },
-        {
-            "id": "",
-            "name_last": "",
-            "name_first": "",
-            "name_middle": "",
-            "title": "",
-            "url": "",
-            "image": ""
+            "image": "assets/img/team/gappmeyer_thomas.jpg",
+            "display_order": "7"
         },
         {
             "id": "GeigerSean",
@@ -79,7 +77,8 @@
             "name_middle": "",
             "title": "System Architect",
             "url": "https://www.linkedin.com/in/sean-geiger-5422771/",
-            "image": "assets/img/team/geiger_sean.jpg"
+            "image": "assets/img/team/geiger_sean.jpg",
+            "display_order": "8"
         },
         {
             "id": "DaffornScott",
@@ -88,7 +87,8 @@
             "name_middle": "",
             "title": "Senior Full-Stack Engineer",
             "url": "https://www.linkedin.com/in/scottdafforn/",
-            "image": "assets/img/team/dafforn_scott.jpg"
+            "image": "assets/img/team/dafforn_scott.jpg",
+            "display_order": "10"
         },
         {
             "id": "HallMegan",
@@ -97,7 +97,8 @@
             "name_middle": "",
             "title": "Project Manager",
             "url": "",
-            "image": "assets/img/team/hall_megan.jpg"
+            "image": "assets/img/team/hall_megan.jpg",
+            "display_order": "11"
         }
     ],
     "investors": [
@@ -109,7 +110,8 @@
             "company_name": "",
             "title": "",
             "url": "https://www.linkedin.com/in/jamescaras/",
-            "image": "assets/img/investors/caras_james.jpg"
+            "image": "assets/img/investors/caras_james.jpg",
+            "display_order": "1"
         },
         {
             "id": "EicherTodd",
@@ -119,7 +121,8 @@
             "company_name": "",
             "title": "",
             "url": "https://www.linkedin.com/in/todd-eicher-9191148/",
-            "image": "assets/img/investors/eicher_todd.jpg"
+            "image": "assets/img/investors/eicher_todd.jpg",
+            "display_order": "2"
         },
         {
             "id": "MartinsonJames",
@@ -129,7 +132,8 @@
             "company_name": "",
             "title": "",
             "url": "https://www.linkedin.com/in/john-martinson-19719916/",
-            "image": "assets/img/investors/martinson_james.jpg"
+            "image": "assets/img/investors/martinson_james.jpg",
+            "display_order": "3"
         },
         {
             "id": "Redblinky",
@@ -139,7 +143,8 @@
             "company_name": "Redblinky Holdings",
             "title": "",
             "url": "",
-            "image": "assets/img/investors/redblinky_holdings_logo.png"
+            "image": "assets/img/investors/redblinky_holdings_logo.png",
+            "display_order": "4"
         },
         {
             "id": "UniversityVentures",
@@ -149,7 +154,8 @@
             "company_name": "University Ventures",
             "title": "",
             "url": "http://universityventures.com",
-            "image": "assets/img/investors/university_ventures_logo.jpg"
+            "image": "assets/img/investors/university_ventures_logo.jpg",
+            "display_order": "5"
         }
     ]
 }
