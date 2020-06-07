@@ -18,6 +18,7 @@ $(document).ready(function(){
 
     // set up the page
     function initializePage(response) {
+		
         // read data, build arrays
         parseJSON(response);
 
@@ -47,13 +48,12 @@ $(document).ready(function(){
                 }
             }
         );
-        // make sure we have a place to store the entries in the HTML and build
-		if ($('.about-team').length > 0 ) {
-			buildPage(teamLength,'team');
-		}
-		if ($('.about-investors').length > 0 ) {
-			buildPage(investorsLength,'investors');
-		}
+        // this originally helped me to figure out which page was in the view
+		// but I don't think it can help me now, since I have both staff
+		// and investors on the same page
+		buildSection(teamLength,"team");
+		buildSection(investorsLength,"investors");
+		
     } // end initializePage()
 
     // dig through the data, push to global arrays
@@ -99,12 +99,12 @@ $(document).ready(function(){
 
     // build the page
     // pass in the number of entries and the type of entries
-    function buildPage(count,type) {
+    function buildSection(count,type) {
 
-        // local var for collecting things
         var catalog = '';
 
-        for (var i = 0; i , count; i++) {
+        for (var i = 0; i < count; i++) {
+			
             var teamID      = '';
             var last_name   = '';
             var first_name  = '';
@@ -113,35 +113,35 @@ $(document).ready(function(){
             var title       = '';
             var img         = '';
             var url         = '';
-            var display_order = '';
             // set the proper container div
             var location = '';
 
             // see what kind of team member we have
             if (type === "team") {
+				
                 teamID      = teamCollection[i].id;
-                last_name   = teamCollection[i].last_name;
-                first_name  = teamCollection[i].first_name;
-                middle_name = teamCollection[i].middle_name;
+                last_name   = teamCollection[i].name_last;
+                first_name  = teamCollection[i].name_first;
+                middle_name = teamCollection[i].name_middle;
                 title       = teamCollection[i].title;
                 img         = teamCollection[i].img;
                 url         = teamCollection[i].url;
-                display_order = teamCollection[i].display_order;
-                location    = '.team-company';
+                location    = 'team-company';
             }
-
+	
             if (type === "investors") {
+				
                 teamID      = investorsCollection[i].id;
-                last_name   = investorsCollection[i].last_name;
-                first_name  = investorsCollection[i].first_name;
-                middle_name = investorsCollection[i].middle_name;
+                last_name   = investorsCollection[i].name_last;
+                first_name  = investorsCollection[i].name_first;
+                middle_name = investorsCollection[i].name_middle;
                 company_name    = investorsCollection[i].company_name;
                 title       = investorsCollection[i].title;
                 url         = investorsCollection[i].url;
-                display_order   = investorsCollection[i].display_order;
-                location    = '.team-investors';
+				img			= investorsCollection[i].image;
+                location    = 'team-investors';
             }
-
+	
             // create the HTML for the card
             // we're using display: grid, so we don't have to worry about columns and rows
 
@@ -158,9 +158,9 @@ $(document).ready(function(){
                 }
                 full_name += " " + last_name;
             }
+			
 
-
-            catalog += "<div id='idCard"+ id +"' class='idCard'>";
+            catalog += "<div id='idCard"+ teamID +"' class='idCard'>";
             
             if (type === "team") {
                 // this is a staff member
@@ -192,12 +192,12 @@ $(document).ready(function(){
                 if (company_name.length > 0) {
                     // this is a company
                     if (url.length > 0) {
-                        catalog += "<a href='" + url + "'><img src='' alt='" + company_name + " logo'></a>"
+                        catalog += "<a href='" + url + "'><img src='" + img + "' alt='" + company_name + " logo'></a>"
                         catalog += "<div class='idBio'>";
                         catalog += "<p class='idCardName'><a href='" + url + "'>" + company_name + "</a></p>";
                         catalog += "</div>";
                     } else {
-                        catalog += "<img src='' alt='" + company_name + " logo'>"
+                        catalog += "<img src='" + img + "' alt='" + company_name + " logo'>"
                         catalog += "<div class='idBio'>";
                         catalog += "<p class='idCardName'>" + company_name + "</p>";
                         catalog += "</div>";
@@ -229,11 +229,15 @@ $(document).ready(function(){
                 }
             }
 
+
             catalog += "</div>"; // end idCard
             
         }
+		
         // Append the card to the UI
-		$(location + ' .catalog').append(catalog);
+		
+		$('#' + location).prepend(catalog);
+		
     }
 });
 

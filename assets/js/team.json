@@ -8,7 +8,7 @@
             "title": "CEO & Architect",
             "url": "https://www.linkedin.com/in/andy-hall-4361a31/",
             "image": "assets/img/team/hall_andy.jpg",
-            "display_order": "1"
+            "display_order": "01"
         },
         {
             "id": "HangerMatt",
@@ -18,7 +18,7 @@
             "title": "CTO",
             "url": "https://www.linkedin.com/in/mattmatthanger/",
             "image": "assets/img/team/hanger_matt.jpg",
-            "display_order": "2"
+            "display_order": "02"
         },
         {
             "id": "McKainKate",
@@ -28,7 +28,7 @@
             "title": "President",
             "url": "https://www.linkedin.com/in/kate-mckain-69450174/",
             "image": "assets/img/team/mckain_kate.jpg",
-            "display_order": "3"
+            "display_order": "03"
         },
         {
             "id": "SmithBrad",
@@ -38,7 +38,7 @@
             "title": "Senior Director of Sales",
             "url": "https://www.linkedin.com/in/brad-smith-3a323879/",
             "image": "assets/img/team/smith_brad.jpg",
-            "display_order": "4"
+            "display_order": "04"
         },
         {
             "id": "StruyfBernard",
@@ -48,7 +48,7 @@
             "title": "Vice-President of Global Development",
             "url": "https://www.linkedin.com/in/bernardstruyf/",
             "image": "assets/img/team/struyf_bernard.jpg",
-            "display_order": "5"
+            "display_order": "05"
         },
         {
             "id": "SponsellerAmi",
@@ -58,7 +58,7 @@
             "title": "Customer Success Manager",
             "url": "https://www.linkedin.com/in/amisponseller/",
             "image": "assets/img/team/sponseller_ami.jpg",
-            "display_order": "6"
+            "display_order": "06"
         },
         {
             "id": "GappmeyerThomas",
@@ -68,7 +68,7 @@
             "title": "Product & Implementation Manager",
             "url": "https://www.linkedin.com/in/thomas-gappmayer-778b3131/",
             "image": "assets/img/team/gappmeyer_thomas.jpg",
-            "display_order": "7"
+            "display_order": "07"
         },
         {
             "id": "GeigerSean",
@@ -78,11 +78,11 @@
             "title": "System Architect",
             "url": "https://www.linkedin.com/in/sean-geiger-5422771/",
             "image": "assets/img/team/geiger_sean.jpg",
-            "display_order": "8"
+            "display_order": "08"
         },
         {
             "id": "DaffornScott",
-            "name_last": "DaffornScott",
+            "name_last": "Dafforn",
             "name_first": "Scott",
             "name_middle": "",
             "title": "Senior Full-Stack Engineer",
@@ -111,7 +111,7 @@
             "title": "",
             "url": "https://www.linkedin.com/in/jamescaras/",
             "image": "assets/img/investors/caras_james.jpg",
-            "display_order": "1"
+            "display_order": "01"
         },
         {
             "id": "EicherTodd",
@@ -122,7 +122,7 @@
             "title": "",
             "url": "https://www.linkedin.com/in/todd-eicher-9191148/",
             "image": "assets/img/investors/eicher_todd.jpg",
-            "display_order": "2"
+            "display_order": "02"
         },
         {
             "id": "MartinsonJames",
@@ -133,7 +133,7 @@
             "title": "",
             "url": "https://www.linkedin.com/in/john-martinson-19719916/",
             "image": "assets/img/investors/martinson_james.jpg",
-            "display_order": "3"
+            "display_order": "03"
         },
         {
             "id": "Redblinky",
@@ -144,7 +144,7 @@
             "title": "",
             "url": "",
             "image": "assets/img/investors/redblinky_holdings_logo.png",
-            "display_order": "4"
+            "display_order": "04"
         },
         {
             "id": "UniversityVentures",
@@ -155,7 +155,7 @@
             "title": "",
             "url": "http://universityventures.com",
             "image": "assets/img/investors/university_ventures_logo.jpg",
-            "display_order": "5"
+            "display_order": "05"
         }
     ]
 }
