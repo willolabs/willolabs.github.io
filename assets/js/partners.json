@@ -23,9 +23,9 @@
         },
         {
             "id": "bib_001",
-            "name": "Bibliotech",
-            "url": "https://bibliotech.education/",
-            "img_path":"assets/img/partners_industry/bibliotech_logo.png",
+            "name": "BibliU",
+            "url": "https://bibliu.com/",
+            "img_path":"assets/img/partners_industry/bibliu_logo.png",
             "active": "true"
         },
         {
@@ -171,6 +171,13 @@
             "name": "EDUCAUSE",
             "url": "https://www.educause.edu/",
             "img_path":"assets/img/partners_industry/educause_logo.png",
+            "active": "true"
+        },
+        {
+            "id": "oup_001",
+            "name": "Oxford University Press",
+            "url": "https://global.oup.com/",
+            "img_path": "assets/img/partners_industry/oxford_university_press_logo.png",
             "active": "true"
         }
     ],
