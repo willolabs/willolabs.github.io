@@ -7,8 +7,7 @@
             "name_middle": "",
             "title": "CEO & Architect",
             "url": "https://www.linkedin.com/in/andy-hall-4361a31/",
-            "image": "assets/img/team/hall_andy.jpg",
-            "display_order": "01"
+            "image": "assets/img/team/hall_andy.jpg"
         },
         {
             "id": "HangerMatt",
@@ -17,8 +16,7 @@
             "name_middle": "",
             "title": "CTO",
             "url": "https://www.linkedin.com/in/mattmatthanger/",
-            "image": "assets/img/team/hanger_matt.jpg",
-            "display_order": "02"
+            "image": "assets/img/team/hanger_matt.jpg"
         },
         {
             "id": "McKainKate",
@@ -27,8 +25,7 @@
             "name_middle": "",
             "title": "President",
             "url": "https://www.linkedin.com/in/kate-mckain-69450174/",
-            "image": "assets/img/team/mckain_kate.jpg",
-            "display_order": "03"
+            "image": "assets/img/team/mckain_kate.jpg"
         },
         {
             "id": "SmithBrad",
@@ -37,8 +34,7 @@
             "name_middle": "",
             "title": "Senior Director of Sales",
             "url": "https://www.linkedin.com/in/brad-smith-3a323879/",
-            "image": "assets/img/team/smith_brad.jpg",
-            "display_order": "04"
+            "image": "assets/img/team/smith_brad.jpg"
         },
         {
             "id": "StruyfBernard",
@@ -47,8 +43,7 @@
             "name_middle": "",
             "title": "Vice-President of Global Development",
             "url": "https://www.linkedin.com/in/bernardstruyf/",
-            "image": "assets/img/team/struyf_bernard.jpg",
-            "display_order": "05"
+            "image": "assets/img/team/struyf_bernard.jpg"
         },
         {
             "id": "SponsellerAmi",
@@ -57,8 +52,7 @@
             "name_middle": "",
             "title": "Customer Success Manager",
             "url": "https://www.linkedin.com/in/amisponseller/",
-            "image": "assets/img/team/sponseller_ami.jpg",
-            "display_order": "06"
+            "image": "assets/img/team/sponseller_ami.jpg"
         },
         {
             "id": "GappmeyerThomas",
@@ -67,8 +61,7 @@
             "name_middle": "",
             "title": "Product & Implementation Manager",
             "url": "https://www.linkedin.com/in/thomas-gappmayer-778b3131/",
-            "image": "assets/img/team/gappmeyer_thomas.jpg",
-            "display_order": "07"
+            "image": "assets/img/team/gappmeyer_thomas.jpg"
         },
         {
             "id": "GeigerSean",
@@ -77,8 +70,7 @@
             "name_middle": "",
             "title": "System Architect",
             "url": "https://www.linkedin.com/in/sean-geiger-5422771/",
-            "image": "assets/img/team/geiger_sean.jpg",
-            "display_order": "08"
+            "image": "assets/img/team/geiger_sean.jpg"
         },
         {
             "id": "DaffornScott",
@@ -87,8 +79,7 @@
             "name_middle": "",
             "title": "Senior Full-Stack Engineer",
             "url": "https://www.linkedin.com/in/scottdafforn/",
-            "image": "assets/img/team/dafforn_scott.jpg",
-            "display_order": "10"
+            "image": "assets/img/team/dafforn_scott.jpg"
         },
         {
             "id": "HallMegan",
@@ -97,9 +88,26 @@
             "name_middle": "",
             "title": "Project Manager",
             "url": "",
-            "image": "assets/img/team/hall_megan.jpg",
-            "display_order": "11"
-        }
+            "image": "assets/img/team/hall_megan.jpg"
+        },
+		{
+			"id": "CornJake",
+			"name_last": "Corn",
+			"name_first": "Jake",
+			"name_middle": "",
+			"title": "Senior Software Engineer",
+			"url": "https://www.linkedin.com/in/jake-corn-codes/",
+			"image": "assets/img/team/corn_jake.jpg"
+		},
+		{
+			"id": "BerzinskiKatherine",
+			"name_last": "Berzinski",
+			"name_first": "Katherine",
+			"name_middle": "",
+			"title": "Software Engineer",
+			"url": "https://www.linkedin.com/in/katherine-berzinski-671933151/",
+			"image": "assets/img/team/berzinski_katherine.jpg"
+		}
     ],
     "investors": [
         {
