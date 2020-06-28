@@ -6,6 +6,10 @@ $(document).ready(function(){
     // Arrays for our JSON data
     var teamCollection      = [];
     var investorsCollection = [];
+	
+	// Arrays for building display order
+	var managementArr = [];
+	var nonmanagementArr = [];
 
     // Get the data, call to set up the page
     $.ajax({
@@ -26,17 +30,9 @@ $(document).ready(function(){
         var teamLength      = teamCollection.length;
         var investorsLength = investorsCollection.length;
 
-        // sort team data by display order
-        teamCollection.sort(
-            function(a,b) {
-                if (a.display_order < b.display_order) {
-                    return -1;
-                }
-                if (a.display_order > b.display_order) {
-                    return 0;
-                }
-            }
-        );
+		
+		
+		
         // sort investor data by display order
         investorsCollection.sort(
             function(a,b) {
@@ -65,19 +61,46 @@ $(document).ready(function(){
         // loop through data types
         $(result.team).each(function(index,value) {
             //local array for each entry
-            var teamArr = [];
-            teamArr.display_order = value.display_order;
-            teamArr.id          = value.id;
-            teamArr.name_last   = value.name_last;
-            teamArr.name_first  = value.name_first;
-            teamArr.name_middle = value.name_middle;
-            teamArr.title       = value.title;
-            teamArr.url         = value.url;
-            teamArr.image       = value.image;
+			// teamArr now memberArr
+            var memberArr = [];
 
-            // add to master array
-            teamCollection.push(teamArr);
+            memberArr.id          = value.id;
+            memberArr.name_last   = value.name_last;
+            memberArr.name_first  = value.name_first;
+            memberArr.name_middle = value.name_middle;
+            memberArr.title       = value.title;
+            memberArr.url         = value.url;
+            memberArr.image       = value.image;
+
+			// process team members for display
+			// separate out management
+			
+			switch(memberArr.id) {
+				case "HallAndy":
+					managementArr[0] = memberArr;
+					break;
+				case "McKainKate":
+					managementArr[1] = memberArr;
+					break;
+				case "HangerMatt":
+					managementArr[2] = memberArr;
+					break;
+				default:
+					nonmanagementArr.push(memberArr);
+			}
+
         });
+		
+		// Sort non-management alphabetically
+		nonmanagementArr.sort(function(a, b) {
+			
+			if (a.name_last < b.name_last) { return -1; }
+			if (a.name_last > b.name_last) { return 1;}
+			return 0;
+			
+		});
+		
+		teamCollection = managementArr.concat(nonmanagementArr);
 
         $(result.investors).each(function(index,value){
             // local array for each entry
