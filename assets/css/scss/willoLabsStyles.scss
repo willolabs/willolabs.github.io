@@ -407,11 +407,8 @@ footer {
     &.investors {
 
         .idCard {
-           /*  max-height: 360px; */
-           /*  min-height: 340px; */
-			box-sizing: border-box;
-			max-height: 100%;
-			min-height: auto;
+            max-height: 360px;
+            min-height: 340px;
         }
         .idImageSocialContainer {
             position: relative;
