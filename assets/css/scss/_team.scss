@@ -1,4 +1,7 @@
 /* Background image definitions for ID Cards */
+#idCardBerzinskiKatherine .idImage {
+    background-image: url("../img/team/berzinski_katherine.jpg");
+}
 #idCardCornJake .idImage {
     background-image: url("../img/team/corn_jake.jpg");
 }
@@ -32,5 +35,10 @@
 #idCardStruyfBernard .idImage {
     background-image: url("../img/team/struyf_bernard.jpg");
 }
-
-
+/* New team grid */
+.team-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-template-rows: 1fr;
+	gap: 40px 20px;
+}
