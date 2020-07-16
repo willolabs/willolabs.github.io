@@ -107,6 +107,15 @@
 			"title": "Software Engineer",
 			"url": "https://www.linkedin.com/in/katherine-berzinski-671933151/",
 			"image": "assets/img/team/berzinski_katherine.jpg"
+		},
+		{
+			"id": "ChandlerShannon",
+			"name_last": "Chandler",
+			"name_first": "Shannon",
+			"name_middle": "",
+			"title": "Customer Success Manager",
+			"url": "https://www.linkedin.com/in/shannon-chandler-79926167/",
+			"image": "assets/img/team/chandler_shannon.jpg"
 		}
     ],
     "investors": [
