@@ -116,6 +116,15 @@
 			"title": "Customer Success Manager",
 			"url": "https://www.linkedin.com/in/shannon-chandler-79926167/",
 			"image": "assets/img/team/chandler_shannon.jpg"
+		},
+		{
+			"id": "MullineauxJosh",
+			"name_last": "Mullineaux",
+			"name_first": "Josh",
+			"name_middle": "",
+			"title": "Head of Product",
+			"url": "https://www.linkedin.com/in/joshmullineaux/",
+			"image": "assets/img/team/mullineaux_josh.jpg"
 		}
     ],
     "investors": [
