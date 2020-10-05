@@ -19,19 +19,10 @@ $(document).ready(function(){
 
 		// Pass object size to functions that build our page
 		var releaseLength = releaseCollection.length;
-
         // Sort releases by julian date
-
-		releaseCollection.sort(
-			function(a,b) {
-				if (a.date_julian > b.date_julian) {
-					return -1;
-				}
-				if (a.date_julian < b.date_julian) {
-					return 0;
-				}
-			}
-		);
+		releaseCollection.sort(function(a,b){
+			return b.date_julian - a.date_julian;
+		});
 		buildPage(releaseLength);
 	}
 
@@ -63,7 +54,8 @@ $(document).ready(function(){
             releaseArr.date_julian = julianDate;
 
             // Add to master array
-            releaseCollection.push(releaseArr);		
+            releaseCollection.push(releaseArr);
+			
         });
 
 
@@ -78,7 +70,6 @@ $(document).ready(function(){
 	function buildPage(releaseCount) {
 		// console.log(releaseCount);
 		var catalog = '';
-		
 		
 		for (var i = 0; i < releaseCount; i++) {
 			var day         = '';
