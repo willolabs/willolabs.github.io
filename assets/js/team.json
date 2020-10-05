@@ -125,7 +125,16 @@
 			"title": "Head of Product",
 			"url": "https://www.linkedin.com/in/joshmullineaux/",
 			"image": "assets/img/team/mullineaux_josh.jpg"
-		}
+		},
+        {
+            "id": "CappellaCepluchHeather",
+            "name_last": "Cappella-Cepluch",
+            "name_first": "Heather",
+            "name_middle": "",
+            "title": "Partner and Client Implementation Manager",
+            "url": "https://www.linkedin.com/in/heather-cappella-cepluch-2b81788/",
+            "image": "assets/img/team/cappella_cepluch_heather.jpg"
+        }
     ],
     "investors": [
         {
