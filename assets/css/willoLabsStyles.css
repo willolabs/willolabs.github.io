@@ -319,6 +319,9 @@ textarea {
 #idCardMullineauxJosh .idImage {
   background-image: url("../img/team/mullineaux_josh.jpg"); }
 
+#idCardCappellaCepluchHeather .idImage {
+  background-image: url("../img/team/cappella_cepluch_heather.jpg"); }
+
 /* New team grid */
 .team-grid {
   display: grid;
