@@ -322,6 +322,9 @@ textarea {
 #idCardCappellaCepluchHeather .idImage {
   background-image: url("../img/team/cappella_cepluch_heather.jpg"); }
 
+#idCardMcKeeverCrystal .idImage {
+  background-image: url("../img/team/mckeever_crystal.jpg"); }
+
 /* New team grid */
 .team-grid {
   display: grid;
@@ -808,8 +811,12 @@ footer {
 
 #contact {
   background-color: #878787; }
-  #contact h1, #contact label, #contact p {
+  #contact h2, #contact h3, #contact label, #contact p {
     color: #FFF; }
+  #contact h3 {
+    margin-bottom: .5em; }
+  #contact .support, #contact .inquiries {
+    margin-bottom: 2em; }
   #contact a, #contact a:link, #contact a:visited {
     color: #FFF;
     text-decoration: underline; }
@@ -817,7 +824,7 @@ footer {
     text-decoration: none; }
   #contact input[type="submit"] {
     display: block;
-    color: #fff;
+    color: #FFF;
     border-color: #FFF; }
     #contact input[type="submit"]:hover, #contact input[type="submit"]:active, #contact input[type="submit"]:focus {
       border-color: #FFF; }
