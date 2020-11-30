@@ -349,10 +349,15 @@ footer {
 #contact {
     background-color: lighten($black, 53%);
     
-    h1, label, p {
-        color: #FFF;
+    h2, h3, label, p {
+        color: $white;
     }
     
+	h3 { margin-bottom: .5em; }
+	.support, .inquiries {
+		margin-bottom: 2em;
+	}
+	
     a, a:link, a:visited {
         color: $white;
         text-decoration: underline;
@@ -364,11 +369,11 @@ footer {
     
     input[type="submit"] {
         display: block;
-        color: #fff;
-        border-color: #FFF;
+        color: $white;
+        border-color: $white;
         
         &:hover, &:active, &:focus {
-            border-color: #FFF;
+            border-color: $white;
         }
     }
     

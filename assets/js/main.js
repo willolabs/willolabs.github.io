@@ -89,7 +89,7 @@ function setCover() {
         }
     }).resize();
 
-
+    // Open and close alert banner, which isn't always present
 	function toggleAlert() {
 		
 		if ($('#alert-body').attr('hidden')) {
@@ -114,7 +114,7 @@ function setCover() {
 		layoutHeader();
 	}
 
-	// Handle the opening and closing of the alert banner
+	// Handle the opening and closing of the alert banner if it's there
 	$('.alert-banner-button-container').on('click','#accordion-alert-button', function(){
 		toggleAlert();
 	});
