@@ -55,15 +55,6 @@
             "image": "assets/img/team/sponseller_ami.jpg"
         },
         {
-            "id": "GappmeyerThomas",
-            "name_last": "Gappmeyer",
-            "name_first": "Thomas",
-            "name_middle": "",
-            "title": "Product & Implementation Manager",
-            "url": "https://www.linkedin.com/in/thomas-gappmayer-778b3131/",
-            "image": "assets/img/team/gappmeyer_thomas.jpg"
-        },
-        {
             "id": "GeigerSean",
             "name_last": "Geiger",
             "name_first": "Sean",
@@ -91,15 +82,6 @@
             "image": "assets/img/team/hall_megan.jpg"
         },
 		{
-			"id": "CornJake",
-			"name_last": "Corn",
-			"name_first": "Jake",
-			"name_middle": "",
-			"title": "Senior Software Engineer",
-			"url": "https://www.linkedin.com/in/jake-corn-codes/",
-			"image": "assets/img/team/corn_jake.jpg"
-		},
-		{
 			"id": "BerzinskiKatherine",
 			"name_last": "Berzinski",
 			"name_first": "Katherine",
@@ -107,15 +89,6 @@
 			"title": "Software Engineer",
 			"url": "https://www.linkedin.com/in/katherine-berzinski-671933151/",
 			"image": "assets/img/team/berzinski_katherine.jpg"
-		},
-		{
-			"id": "ChandlerShannon",
-			"name_last": "Chandler",
-			"name_first": "Shannon",
-			"name_middle": "",
-			"title": "Customer Success Manager",
-			"url": "https://www.linkedin.com/in/shannon-chandler-79926167/",
-			"image": "assets/img/team/chandler_shannon.jpg"
 		},
 		{
 			"id": "MullineauxJosh",
