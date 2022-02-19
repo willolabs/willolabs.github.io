@@ -107,7 +107,27 @@
             "title": "Integration and Provider Services Manager",
             "url": "https://www.linkedin.com/in/divyabalachandran/",
             "image": "assets/img/team/balachandran_divya.jpg"
-        }
+        },
+		{
+			"id": "DecouxJeana",
+			"name_last": "DeCoux",
+			"name_first": "Jeana",
+			"name_middle": "",
+			"title": "Accounting Manager",
+			"url": "https://www.linkedin.com/in/jeana-decoux-01819315/",
+			"image": ""
+			
+		},
+		{
+			"id": "OpalachAllison",
+			"name_last": "Opalach",
+			"name_first": "Allison",
+			"name_middle": "",
+			"title": "Publisher and Vendor Implementation Manager",
+			"url": "https://www.linkedin.com/in/allison-opaluch-59ab7217/",
+			"image": ""
+			
+		}
     ],
     "investors": [
         {
